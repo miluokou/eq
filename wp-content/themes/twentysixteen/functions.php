@@ -1209,7 +1209,7 @@ function get_level_pro($id)
     return $i;
 }
 
-function get_lv1_and_lv2_catname_link_arr()
+function getNavigationBar()
 {
     $cates = get_categories_all();
     $cateATree = array();
