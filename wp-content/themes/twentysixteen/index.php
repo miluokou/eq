@@ -1,6 +1,6 @@
 <?php
 get_header();
-$res = getNavigationBar();
+$getNavigationBar = getNavigationBar();
 
 ?>
 
@@ -30,305 +30,27 @@ $res = getNavigationBar();
             <div class="menu_list">
                 <ul class="nav navbar-nav">
                     <div class="ulwrapper">
-                        <li class="sub ">
-                            <a title="Unternehmen" href="unternehmen\index.htm">Unternehmen111</a>
-                            <ul class="">
-                                <div class="ulwrapper">
-                                    <li class="visible-xs visible-sm">
-                                        <a title="Unternehmen" href="unternehmen\index.htm">Unternehmen</a></li>
-                                    <li class="">
-                                        <a title="KNOLL weltweit" href="unternehmen\knoll-weltweit\index.htm">KNOLL weltweit</a></li>
-                                    <li class="">
-                                        <a title="Geschäftsleitung" href="/unternehmen/geschaeftsleitung/">Geschäftsleitung</a></li>
-                                    <li class="">
-                                        <a title="Historie" href="/unternehmen/historie/">Historie</a></li>
-                                    <li class="">
-                                        <a title="Unternehmensleitbild" href="/unternehmen/unternehmensleitbild/">Unternehmensleitbild</a></li>
-                                    <li class="">
-                                        <a title="Portrait" href="/unternehmen/portrait/">Portrait</a></li>
-                                    <li class="">
-                                        <a title="Zertifikate" href="/unternehmen/zertifikate/">Zertifikate</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="sub">
-                            <a title="Einzelanlagen" href="einzelanlagen\index.htm">Einzelanlagen</a>
-                            <ul class="">
-                                <div class="ulwrapper">
-                                    <li class="visible-xs visible-sm">
-                                        <a title="Einzelanlagen" href="einzelanlagen\index.htm">Einzelanlagen</a></li>
-                                    <li class="sub ">
-                                        <a title="Hochdruckanlagen" href="einzelanlagen\hochdruckanlagen\index.htm">Hochdruckanlagen</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Hochdruckanlagen" href="einzelanlagen\hochdruckanlagen\index.htm">Hochdruckanlagen</a></li>
-                                                <li>
-                                                    <a title="Hochdruckanlage LubiCool®" href="einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm">Hochdruckanlage LubiCool®</a></li>
-                                                <li>
-                                                    <a title="Druckerhöhungsanlage DHS" href="einzelanlagen\hochdruckanlagen\druckerhoehungsanlage-dhs\index.htm">Druckerhöhungsanlage DHS</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a title="Filteranlagen" href="einzelanlagen\filteranlagen\index.htm">Filteranlagen</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Filteranlagen" href="einzelanlagen\filteranlagen\index.htm">Filteranlagen</a></li>
-                                                <li>
-                                                    <a title="Flüssigkeitszentrifuge CA 100" href="einzelanlagen\filteranlagen\fluessigkeitszentrifuge-ca-100\index.htm">Flüssigkeitszentrifuge CA 100</a></li>
-                                                <li>
-                                                    <a title="Hydrozyklon F 60" href="einzelanlagen\filteranlagen\hydrozyklon-f-60\index.htm">Hydrozyklon F 60</a></li>
-                                                <li>
-                                                    <a title="Hydrostatfilter HL" href="einzelanlagen\filteranlagen\hydrostatfilter-hl\index.htm">Hydrostatfilter HL</a></li>
-                                                <li>
-                                                    <a title="Kompaktfilter KF" href="einzelanlagen\filteranlagen\kompaktfilter-kf\index.htm">Kompaktfilter KF</a></li>
-                                                <li>
-                                                    <a title="Kompaktfilter KF-E" href="einzelanlagen\filteranlagen\kompaktfilter-kf-e\index.htm">Kompaktfilter KF-E</a></li>
-                                                <li>
-                                                    <a title="Feinstfilter MicroPur®" href="einzelanlagen\filteranlagen\feinstfilter-micropur\index.htm">Feinstfilter MicroPur®</a></li>
-                                                <li>
-                                                    <a title="Schwerkraftbandfilter PF" href="einzelanlagen\filteranlagen\schwerkraftbandfilter-pf\index.htm">Schwerkraftbandfilter PF</a></li>
-                                                <li>
-                                                    <a title="Rückspülfilter TURBO" href="einzelanlagen\filteranlagen\rueckspuelfilter-turbo\index.htm">Rückspülfilter TURBO</a></li>
-                                                <li>
-                                                    <a title="Vakuumfilter VL" href="einzelanlagen\filteranlagen\vakuumfilter-vl\index.htm">Vakuumfilter VL</a></li>
-                                                <li>
-                                                    <a title="Vakuumfilter VLO" href="einzelanlagen\filteranlagen\vakuumfilter-vlo\index.htm">Vakuumfilter VLO</a></li>
-                                                <li>
-                                                    <a title="Vakuumfilter VLX" href="einzelanlagen\filteranlagen\vakuumfilter-vlx\index.htm">Vakuumfilter VLX</a></li>
-                                                <li>
-                                                    <a title="Vakuumrotationsfilter VRF" href="einzelanlagen\filteranlagen\vakuumrotationsfilter-vrf\index.htm">Vakuumrotationsfilter VRF</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a title="Förderanlagen" href="einzelanlagen\foerderanlagen\index.htm">Förderanlagen</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Förderanlagen" href="einzelanlagen\foerderanlagen\index.htm">Förderanlagen</a></li>
-                                                <li>
-                                                    <a title="Kratzbandförderer K" href="einzelanlagen\foerderanlagen\kratzbandfoerderer-k\index.htm">Kratzbandförderer K</a></li>
-                                                <li>
-                                                    <a title="Magnetbandförderer M" href="einzelanlagen\foerderanlagen\magnetbandfoerderer-m\index.htm">Magnetbandförderer M</a></li>
-                                                <li>
-                                                    <a title="Plattenbandförderer P" href="einzelanlagen\foerderanlagen\plattenbandfoerderer-p\index.htm">Plattenbandförderer P</a></li>
-                                                <li>
-                                                    <a title="Rückpumpstation RIK" href="einzelanlagen\foerderanlagen\rueckpumpstation-rik\index.htm">Rückpumpstation RIK</a></li>
-                                                <li>
-                                                    <a title="Rückpumpstation RKR" href="einzelanlagen\foerderanlagen\rueckpumpstation-rkr\index.htm">Rückpumpstation RKR</a></li>
-                                                <li>
-                                                    <a title="Rückpumpstation RSR" href="einzelanlagen\foerderanlagen\rueckpumpstation-rsr\index.htm">Rückpumpstation RSR</a></li>
-                                                <li>
-                                                    <a title="Scharnierbandförderer S" href="einzelanlagen\foerderanlagen\scharnierbandfoerderer-s\index.htm">Scharnierbandförderer S</a></li>
-                                                <li>
-                                                    <a title="Kratzbandförderer SF" href="einzelanlagen\foerderanlagen\kratzbandfoerderer-sf\index.htm">Kratzbandförderer SF</a></li>
-                                                <li>
-                                                    <a title="Kratzbandförderer SR" href="einzelanlagen\foerderanlagen\kratzbandfoerderer-sr\index.htm">Kratzbandförderer SR</a></li>
-                                                <li>
-                                                    <a title="Zugklappenförderer ZK" href="einzelanlagen\foerderanlagen\zugklappenfoerderer-zk\index.htm">Zugklappenförderer ZK</a></li>
-                                                <li>
-                                                    <a title="Absaugstation" href="einzelanlagen\foerderanlagen\absaugstation\index.htm">Absaugstation</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a title="MMS ControLube" href="einzelanlagen\mms-controlube\index.htm">MMS ControLube</a></li>
-                                    <li class="">
-                                        <a title="Zerkleinerungsanlagen" href="einzelanlagen\zerkleinerungsanlagen\index.htm">Zerkleinerungsanlagen</a></li>
-                                    <li class="sub ">
-                                        <a title="Anwendungen" href="/einzelanlagen/anwendungen/">Anwendungen</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Anwendungen" href="/einzelanlagen/anwendungen/">Anwendungen</a></li>
-                                                <li>
-                                                    <a title="Fräsen" href="einzelanlagen\anwendungen\fraesen\index.htm">Fräsen</a></li>
-                                                <li>
-                                                    <a title="Drehen" href="einzelanlagen\anwendungen\drehen\index.htm">Drehen</a></li>
-                                                <li>
-                                                    <a title="Bohren, Senken, Reiben &amp; Gewindeschneiden" href="einzelanlagen\anwendungen\bohren-senken-reiben-gewindeschneiden\index.htm">Bohren, Senken, Reiben &amp; Gewindeschneiden</a></li>
-                                                <li>
-                                                    <a title="Hartdrehen" href="einzelanlagen\anwendungen\hartdrehen\index.htm">Hartdrehen</a></li>
-                                                <li>
-                                                    <a title="Abwälzfräsen" href="einzelanlagen\anwendungen\abwaelzfraesen\index.htm">Abwälzfräsen</a></li>
-                                                <li>
-                                                    <a title="Sägen" href="einzelanlagen\anwendungen\saegen\index.htm">Sägen</a></li>
-                                                <li>
-                                                    <a title="Räumen" href="einzelanlagen\anwendungen\raeumen\index.htm">Räumen</a></li>
-                                                <li>
-                                                    <a title="Stanzen &amp; Laserschneiden" href="einzelanlagen\anwendungen\stanzen-laserschneiden\index.htm">Stanzen &amp; Laserschneiden</a></li>
-                                                <li>
-                                                    <a title="Schleifen" href="einzelanlagen\anwendungen\schleifen\index.htm">Schleifen</a></li>
-                                                <li>
-                                                    <a title="Werkzeugschleifen" href="einzelanlagen\anwendungen\werkzeugschleifen\index.htm">Werkzeugschleifen</a></li>
-                                                <li>
-                                                    <a title="Läppen &amp; Honen" href="einzelanlagen\anwendungen\laeppen-honen\index.htm">Läppen &amp; Honen</a></li>
-                                                <li>
-                                                    <a title="Gleitschleifen" href="einzelanlagen\anwendungen\gleitschleifen\index.htm">Gleitschleifen</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="sub">
-                            <a title="Zentralsysteme" href="zentralsysteme\index.htm">Zentralsysteme</a>
-                            <ul class="">
-                                <div class="ulwrapper">
-                                    <li class="visible-xs visible-sm">
-                                        <a title="Zentralsysteme" href="zentralsysteme\index.htm">Zentralsysteme</a></li>
-                                    <li class="sub ">
-                                        <a title="Systeme mit Pumptechnik" href="zentralsysteme\systeme-mit-pumptechnik\index.htm">Systeme mit Pumptechnik</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Systeme mit Pumptechnik" href="zentralsysteme\systeme-mit-pumptechnik\index.htm">Systeme mit Pumptechnik</a></li>
-                                                <li>
-                                                    <a title="Zentrale Filteranlagen" href="/zentralsysteme/systeme-mit-pumptechnik/zentrale-filteranlagen/">Zentrale Filteranlagen</a></li>
-                                                <li>
-                                                    <a title="Rückförderanlagen" href="/zentralsysteme/systeme-mit-pumptechnik/rueckfoerderanlagen/">Rückförderanlagen</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a title="Systeme mit Saugtechnik" href="zentralsysteme\systeme-mit-saugtechnik\index.htm">Systeme mit Saugtechnik</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Systeme mit Saugtechnik" href="zentralsysteme\systeme-mit-saugtechnik\index.htm">Systeme mit Saugtechnik</a></li>
-                                                <li>
-                                                    <a title="Zentrale Sauganlagen" href="/zentralsysteme/systeme-mit-saugtechnik/zentrale-sauganlagen/">Zentrale Sauganlagen</a></li>
-                                                <li>
-                                                    <a title="Rückförderanlagen" href="/zentralsysteme/systeme-mit-saugtechnik/rueckfoerderanlagen/">Rückförderanlagen</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a title="Systeme mit Sammelförderer" href="zentralsysteme\systeme-mit-sammelfoerderer\index.htm">Systeme mit Sammelförderer</a></li>
-                                    <li class="">
-                                        <a title="Systeme zur Späneaufbereitung" href="zentralsysteme\systeme-zur-spaeneaufbereitung\index.htm">Systeme zur Späneaufbereitung</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="sub">
-                            <a title="Transportsysteme" href="transportsysteme\index.htm">Transportsysteme</a>
-                            <ul class="">
-                                <div class="ulwrapper">
-                                    <li class="visible-xs visible-sm">
-                                        <a title="Transportsysteme" href="transportsysteme\index.htm">Transportsysteme</a></li>
-                                    <li class="">
-                                        <a title="Montageanwendungen" href="/transportsysteme/montageanwendungen/">Montageanwendungen</a></li>
-                                    <li class="">
-                                        <a title="Logistikanwendungen" href="/transportsysteme/logistikanwendungen/">Logistikanwendungen</a></li>
-                                    <li class="">
-                                        <a title="Dienstleistungen" href="/transportsysteme/dienstleistungen/">Dienstleistungen</a></li>
-                                    <li class="">
-                                        <a title="Branchen" href="/transportsysteme/branchen/">Branchen</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="sub">
-                            <a title="Pumpen" href="pumpen\index.htm">Pumpen</a>
-                            <ul class="">
-                                <div class="ulwrapper">
-                                    <li class="visible-xs visible-sm">
-                                        <a title="Pumpen" href="pumpen\index.htm">Pumpen</a></li>
-                                    <li class="">
-                                        <a title="Schraubenspindelpumpe KTS" href="pumpen\schraubenspindelpumpe-kts\index.htm">Schraubenspindelpumpe KTS</a></li>
-                                    <li class="">
-                                        <a title="Schraubenspindelpumpe KTSV" href="pumpen\schraubenspindelpumpe-ktsv\index.htm">Schraubenspindelpumpe KTSV</a></li>
-                                    <li class="sub">
-                                        <a title="Kreiselpumpe" href="pumpen\kreiselpumpe\index.htm">Kreiselpumpe</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Kreiselpumpe" href="pumpen\kreiselpumpe\index.htm">Kreiselpumpe</a></li>
-                                                <li>
-                                                    <a title="Blockpumpen" href="/pumpen/kreiselpumpe/blockpumpen/">Blockpumpen</a></li>
-                                                <li>
-                                                    <a title="Reinmediumpumpen" href="/pumpen/kreiselpumpe/reinmediumpumpen/">Reinmediumpumpen</a></li>
-                                                <li>
-                                                    <a title="Schmutzmediumpumpen" href="/pumpen/kreiselpumpe/schmutzmediumpumpen/">Schmutzmediumpumpen</a></li>
-                                                <li>
-                                                    <a title="Schredderpumpe TSC" href="/pumpen/kreiselpumpe/schredderpumpe-tsc/">Schredderpumpe TSC</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a title="Exzenterschneckenpumpe MX" href="pumpen\exzenterschneckenpumpe-mx\index.htm">Exzenterschneckenpumpe MX</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="">
-                            <a title="Service" href="service\index.htm">Service</a></li>
-                        <li class="sub">
-                            <a title="Karriere" href="karriere\index.htm">Karriere</a>
-                            <ul class="">
-                                <div class="ulwrapper">
-                                    <li class="visible-xs visible-sm">
-                                        <a title="Karriere" href="karriere\index.htm">Karriere</a></li>
-                                    <li class="sub ">
-                                        <a title="Stellenangebote" href="karriere\stellenangebote\index.htm">Stellenangebote</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Stellenangebote" href="karriere\stellenangebote\index.htm">Stellenangebote</a></li>
-                                                <li>
-                                                    <a title="APP-Entwickler (m/w/d)" href="karriere\stellenangebote\app-entwickler-mwd\index.htm">APP-Entwickler (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Arbeitsvorbereiter mit Schwerpunkt Wertanalyse (m/w/d)" href="karriere\stellenangebote\arbeitsvorbereiter-mit-schwerpunkt-wertanalyse-mwd\index.htm">Arbeitsvorbereiter mit Schwerpunkt Wertanalyse (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Elektrokonstrukteur (m/w/d)" href="karriere\stellenangebote\elektrokonstrukteur-mwd\index.htm">Elektrokonstrukteur (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Elektromonteur, Schaltschrankbau (m/w/d)" href="karriere\stellenangebote\elektromonteur-schaltschrankbau-mwd\index.htm">Elektromonteur, Schaltschrankbau (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="IT-Systemmanager (m/w/d)" href="karriere\stellenangebote\it-systemmanager-mwd\index.htm">IT-Systemmanager (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Maschinenbediener (m/w/d)" href="karriere\stellenangebote\maschinenbediener-mwd\index.htm">Maschinenbediener (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Montagegruppenleiter (m/w/d)" href="karriere\stellenangebote\montagegruppenleiter-mwd\index.htm">Montagegruppenleiter (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Personalreferent (m/w/d)" href="karriere\stellenangebote\personalreferent-mwd\index.htm">Personalreferent (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Produktmanager (m/w/d)" href="karriere\stellenangebote\produktmanager-mwd\index.htm">Produktmanager (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Reinigungskraft (auf 450€ - Basis) (m/w/d)" href="karriere\stellenangebote\reinigungskraft-auf-450eur-basis-mwd\index.htm">Reinigungskraft (auf 450€ - Basis) (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Servicemonteur elektrisch (m/w/d)" href="karriere\stellenangebote\servicemonteur-elektrisch-mwd\index.htm">Servicemonteur elektrisch (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="SPS-Programmierer (m/w/d)" href="karriere\stellenangebote\sps-programmierer-mwd\index.htm">SPS-Programmierer (m/w/d)</a></li>
-                                                <li>
-                                                    <a title="Student (m/w/d) für den Bereich IT-Governance" href="karriere\stellenangebote\student-mwd-fuer-den-bereich-it-governance\index.htm">Student (m/w/d) für den Bereich IT-Governance</a></li>
-                                                <li>
-                                                    <a title="Terminplaner (m/w/d)" href="karriere\stellenangebote\terminplaner-mwd\index.htm">Terminplaner (m/w/d)</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="sub ">
-                                        <a title="Ausbildung" href="karriere\ausbildung\index.htm">Ausbildung</a>
-                                        <ul class="">
-                                            <div class="ulwrapper">
-                                                <li class="visible-xs visible-sm">
-                                                    <a title="Ausbildung" href="karriere\ausbildung\index.htm">Ausbildung</a></li>
-                                                <li>
-                                                    <a title="Praktika" href="/karriere/ausbildung/praktika/">Praktika</a></li>
-                                                <li>
-                                                    <a title="Ausbildungsberufe" href="karriere\ausbildung\ausbildungsberufe\index.htm">Ausbildungsberufe</a></li>
-                                                <li>
-                                                    <a title="Studium" href="karriere\ausbildung\studium\index.htm">Studium</a></li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="">
-                            <a title="Aktuelles" href="aktuelles\index.htm">Aktuelles</a></li>
-                        <li class="">
-                            <a title="Kontakt" href="kontakt\index.htm">Kontakt</a></li>
+                        <?php
+                            foreach ($getNavigationBar as $term_id => $lv1title) {
+                                echo '<li class="sub"><a title="'.$lv1title['name'].'" href="'.get_category_link($term_id).'">'.$lv1title['name'].'</a>';
+                                if(!empty($lv1title['child'])){
+                                    echo '<ul class=""><div class="ulwrapper">';
+                                    foreach ($lv1title['child'] as $lv2term_id => $lv2title){
+                                        echo '<li class="sub "><a title="'.$lv2title['name'].'" href="'.get_category_link($lv2term_id).'">'.$lv2title['name'].'</a>';
+                                        if(!empty($lv2title['child'])){
+                                            echo '<ul class=""><div class="ulwrapper">';
+                                            foreach ($lv2title['child'] as $lv3term_id => $lv3title){
+                                                echo '<li class="sub"><a title="'.$lv3title['name'].'" href="'.get_category_link($lv3term_id).'">'.$lv3title['name'].'</a></li>';
+                                            }
+                                            echo '</div></ul>';
+                                        }
+                                        echo '</li>';
+                                    }
+                                    echo ' </div></ul>';
+                                }
+                                echo '</li>';
+                            }
+                        ?>
                     </div>
                 </ul>
                 <div class="menu_bottom">

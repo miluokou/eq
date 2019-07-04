@@ -1214,35 +1214,21 @@ function getNavigationBar()
     $cates = get_categories_all();
     $cateATree = array();
     $parentObjectArray = get_parent0();
+
     foreach ($parentObjectArray as $parentObject) {
         $cateATree[$parentObject->term_id]['name'] = $parentObject->name;
-        $cateATree[$parentObject->term_id]['link'] = get_category_link($parentObject->term_id);
     }
-        foreach ($cates as $cate) {
-            if (get_level_pro($cate->term_id) == 2) {
-                $cateATree[$cate->parent]['name'] = get_category($cate->parent)->name;
-                $cateATree[$cate->parent]['child'][$cate->term_id]['name'] = $cate->name;
-                $cateATree[$cate->parent]['child'][$cate->term_id]['link'] = get_category_link($cate->term_id);
-            }
-            if (get_level_pro($cate->term_id) == 3) {
-                $lv2Fathor = get_category($cate->parent);
-                $cateATree3 = array(
-                    $lv2Fathor->parent => array(
-                        'child' => array(
-                            $cate->parent => array(
-                                'name' => $lv2Fathor->name,
-                                'link' => get_category_link($lv2Fathor->term_id),
-                                $cate->term_id => array(
-                                    'name' => $cate->name,
-                                    'link' => get_category_link($cate->term_id),
-                                ),
-                            ),
-                        ),
-                    ),
-                );
-            }
+    foreach ($cates as $cate) {
+        if (get_level_pro($cate->term_id) == 2) {
+            $cateATree[$cate->parent]['name'] = trim(get_category($cate->parent)->name);
+            $cateATree[$cate->parent]['child'][$cate->term_id]['name'] = trim($cate->name);
         }
-        return $cateATree3;
+        if (get_level_pro($cate->term_id) == 3) {
+            $cateATree[get_category($cate->parent)->parent]['child'][get_category($cate->parent)->term_id]['name']= trim(get_category($cate->parent)->name);
+            $cateATree[get_category($cate->parent)->parent]['child'][get_category($cate->parent)->term_id]['child'][$cate->term_id]['name'] = trim($cate->name);
+        }
+    }
+        return $cateATree;
 
 }
 
