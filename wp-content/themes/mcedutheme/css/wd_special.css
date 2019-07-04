@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document 
+@font-face
+{
+font-family: myFirstFont;
+src:url('../fonts/AvenirLTStd-Roman.otf');
+}
+
+*/
+@font-face{
+font-family: myFirstFont;
+src: url('../fonts/SourceHanSansCN-Normal.otf'); /* IE9+ */
+}
+dt{ font-weight:500;}
+#wddh a{ font-size:16px; background-image:none;}
+#wddh li ul a{ font-size:14px; background-image:none;}
+
+.wd_nav{ width:100%; float:left; background: rgba(0, 0, 0, .9); margin-top: -255px;}
+.wd_navw{ width:1200px; margin:0 auto;}
+.wd_navw li{ line-height:92px; padding:0 30px; float:left;}
+.wd_navw li a{ font-size:16px; color:#FFF;}
+.wd_navw li a:hover{ color:#b89f5f;}
+#wd_nava{ color:#b89f5f;}
+
+.wd_ine{width:1200px; margin:0 auto; margin-top: -70px;}
+.wd_inel{ float:left; width:100%; margin-bottom:100px;}
+.wd_inell{ float:left; width:47%;}
+.wd_inell img{ width:100%;}
+.wd_inell .bx-prev,.wd_inel .bx-next { display:none;}
+.wd_inell .bx-wrapper .bx-pager.bx-default-pager a{ width:35px; height:4px;}
+
+.wd_inelz{ float:right; width:46%;}
+.inh_l{ width:100%; float:left; font-size:48px; line-height:55px; color:#000; font-weight:500; margin-bottom:25px;}
+.inh_l p{ font-size:30px; font-weight:400; line-height:35px;}
+.inh_l span{ float:left; width:60px; height:2px; background-color:#b89f5f; margin-top:15px;}
+
+.wd_inelzl{float:left; width:100%;}
+.wd_inelzl dl{ float:left; width:100%; border-bottom:1px solid #dbdbdb; padding-bottom:30px; margin-bottom:30px;}
+.wd_inelzl dt{ line-height:28px; height:56px; overflow:hidden; font-size:20px; margin-bottom:8px;}
+.wd_inelzl dt a{color:#b89f5f;}
+.wd_inelzl dd{    line-height: 25px;
+    font-size: 14px; overflow:hidden;}
+
+.wd_inez{ float:left; width:100%; margin-bottom:100px;}
+.wd_inezl{ float:left; width:46%;}
+.wd_inezll{ float:left; width:100%;}
+.wd_inezll dl{ float:left; width:100%;}
+.wd_inezll dt{ line-height:28px; height:28px; overflow:hidden; font-size:20px; margin-bottom:8px;}
+.wd_inezll dl a{color:#b89f5f;}
+.wd_inezll dl span{color:#b89f5f;}
+.wd_inezll dd{    line-height: 25px;
+    font-size: 14px; overflow:hidden;}
+
+.wd_inezz{ float:right; width:47%;}
+
+.wd_inezb{float:left; width:100%;}
+.wd_inezbl{float:left; width:100%; }
+.wd_inezbl ul{ float:left; width:100%; padding:0;}
+.wd_inezbl li{ width:25%; float:left; text-align:center; font-size:14px;}
+.wd_inezbl span{float:left; width:100%; color:#b89f5f; line-height:30px;}
+.wd_inezbl p{ color:#4c4c4c;}
+.wd_inezbl img{ padding:8px; border:1px solid #333; margin-bottom:10px;}
+.wd_inezbz{float:left; width:100%; margin-bottom:40px;}
+.wd_inezbz ul{ float:left; width:100%; padding:0;}
+.wd_inezbz li{ width:33.3%; float:left; text-align:center; font-size:14px; line-height:30px;}
+.wd_inezbz span{float:left; width:100%; color:#b89f5f; line-height:30px;}
+.wd_inezbz p{ color:#4c4c4c;}
+.wd_inezbz img{ padding:8px; border:1px solid #333; margin-bottom:10px;}
+
+.wd_ineb{ float:left; width:100%; margin-bottom:70px;}
+.wd_inebl{float:right; width:57%; margin-bottom:-11%; z-index:100; position:relative;}
+.inh_l a{ float:right; font-size:18px; height:50px; line-height:50px; border:1px solid #d8d8d8; color:#000; border-radius:30px; padding:0 6%; margin-top:25px;}
+
+.wd_ineb dl{ width:100%; float:left; margin-bottom:50px;}
+.wd_ineb dl img{ float:left; width:36%;}
+.wd_ineb dt{ float:right; width:57%; line-height:28px; height:28px; overflow:hidden; font-size:20px; margin-bottom:10px; margin-top:5%;}
+.wd_ineb dt a{color:#b89f5f;}
+.wd_ineb dd{ float:right; width:57%; line-height:28px; font-size:16px; height:84px; overflow:hidden;}
+#mbdt{margin-top:11%;}
+
+.meeting{width:1100px; float:left; left:50%; margin-left:-550px; position:relative; margin-top: -110px;}
+.meeting_l{ float:left; width:100%; line-height:30px; font-size:16px; color:#656565; margin-top:30px; text-indent:28px; margin-bottom:100px;}
+.meeting_l h2{ text-align:center; font-size:20px; line-height:20px; margin-bottom:35px;}
+
+.splendid{width:1200px; float:left; left:50%; margin-left:-600px; position:relative; margin-top: -110px;}
+.splendid_l{ float:left; width:100%; margin-top:30px;}
+.splendid dl{ width:100%; float:left; margin-bottom:50px;}
+.splendid dl img{ float:left; width:36%;}
+.splendid dt{ float:right; width:57%; line-height:28px; height:28px; overflow:hidden; font-size:20px; margin-bottom:10px; margin-top:5%;}
+.splendid dt a{color:#b89f5f;}
+.splendid dd{ float:right; width:57%; line-height:28px; font-size:16px; height:84px; overflow:hidden;}
+
+.guests{width:1200px; float:left; left:50%; margin-left:-600px; position:relative; margin-top: -110px;}
+.guests_l{ float:left; width:100%; margin-top:30px; margin-bottom:50px;}
+.guests_l dl{ width:46%; padding:0 1%; float:left; margin:0 1%; margin-bottom:50px; overflow:auto; border:0px solid #d8d8d8; border-radius:3px; background:url("../wd_images/dfgv.jpg") center center no-repeat;}
+.guests_l dl img{ float:left; width:43%; border-radius:3px;}
+.guests_l dt{ float:right; width:50%; line-height:28px; height:28px; color:#b89f5f; overflow:hidden; font-size:20px; margin-bottom:10px; margin-top:15%;}
+.guests_l dd{ float:right; width:50%; color:#aeaeae; font-size:16px;}
+
+.bannz{ display:none;}
+@media screen and (max-width: 1200px){
+.wd_navw{ width:98%; margin:0 auto;}
+.wd_ine{width:98%; margin:0 auto; margin-top: -70px;}
+
+.bannl{ display:none;}
+.bannz{ display:block;}
+
+.guests{width:98%; float:left; left:1%; margin-left:0px; margin-top: -100px;}
+
+.splendid{width:98%; float:left; left:1%; margin-left:0px; margin-top: -100px;}
+}
+@media screen and (max-width: 1100px){
+.meeting{width:98%; float:left; left:0%; margin-left:1%; position:relative; margin-top: -110px;}
+.meeting_l{ float:left; width:100%; line-height:30px; font-size:16px; color:#656565; margin-top:30px; text-indent:28px; margin-bottom:50px;}
+.meeting_l h2{ text-align:center; font-size:20px; line-height:30px; margin-bottom:35px;}
+.meeting_l img{ width:100%; float:left;}
+}
+@media screen and (max-width: 1050px){
+
+.wd_inezbl li{ width:23%; float:left; margin:0 1%; text-align:center; font-size:14px;}
+.wd_inezbl li img{ width:100%;}	
+.wd_inezbz li{ width:29%; float:left; margin:0 2%; text-align:center; font-size:14px;}
+.wd_inezbz li img{ width:100%;}	
+}
+
+@media screen and (max-width: 960px){
+.inh_l{ width:100%; float:left; font-size:35px; line-height:55px; color:#000; font-weight:500; margin-bottom:25px;}
+.inh_l p{ font-size:20px; font-weight:400; line-height:35px;}
+.inh_l span{ float:left; width:60px; height:2px; background-color:#b89f5f; margin-top:15px;}	
+	
+.wd_inelzl dl{ float:left; width:100%; border-bottom:1px solid #dbdbdb; padding-bottom:10px; margin-bottom:10px;}
+.wd_inelzl dt{ line-height:30px; height:30px; overflow:hidden; font-size:16px; margin-bottom:8px;}
+.wd_inelzl dt a{color:#b89f5f;}
+.wd_inelzl dd{line-height:28px; font-size:14px; height:56px; overflow:hidden;}
+	
+.wd_inezll dl{ float:left; width:100%;}
+.wd_inezll dt{ line-height:28px; height:28px; overflow:hidden; font-size:16px; margin-bottom:8px;}
+.wd_inezll dl a{color:#b89f5f;}
+.wd_inezll dl span{color:#b89f5f;}
+.wd_inezll dd{line-height:28px; font-size:14px; height:140px; overflow:hidden;}	
+
+.wd_inebl{float:right; width:100%; margin-bottom:0%; z-index:100; position:relative;}
+.inh_l a{ float:right; font-size:14px; height:40px; line-height:40px; border:1px solid #d8d8d8; color:#000; border-radius:30px; padding:0 4%; margin-top:25px;}
+#mbdt{margin-top:5%;}
+
+.wd_ineb dl img{ float:left; width:36%;}
+.wd_ineb dt{ float:right; width:57%; line-height:28px; height:28px; overflow:hidden; font-size:16px; margin-bottom:10px; margin-top:5%;}
+.wd_ineb dt a{color:#b89f5f;}
+.wd_ineb dd{ float:right; width:57%; line-height:28px; font-size:14px; height:84px; overflow:hidden;}	
+}
+
+@media screen and (max-width: 760px){
+.wd_ine {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: -100px;
+}	
+.wd_inel {
+    float: left;
+    width: 100%;
+    margin-bottom:50px;	}
+	
+.inh_l{ width:100%; float:left; font-size:25px; line-height:45px; color:#000; font-weight:500; margin-bottom:15px;}
+.inh_l p{ font-size:12px; font-weight:400; line-height:25px;}
+.inh_l span{ float:left; width:60px; height:2px; background-color:#b89f5f; margin-top:10px;}	
+	
+.wd_inelzl dl{ float:left; width:100%; border-bottom:1px solid #dbdbdb; padding-bottom:10px; margin-bottom:10px;}
+.wd_inelzl dt{ line-height:30px; height:30px; overflow:hidden; font-size:16px; margin-bottom:8px;}
+.wd_inelzl dt a{color:#b89f5f;}
+.wd_inelzl dd{line-height:28px; font-size:14px; height:56px; overflow:hidden;}
+
+.wd_inez {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.wd_inezl{margin-bottom:50px;}
+.wd_inezz{ float:right; width:47%; margin-bottom:50px;}
+.wd_inezll dl{ float:left; width:100%;}
+.wd_inezll dt{ line-height:28px; height:28px; overflow:hidden; font-size:16px; margin-bottom:8px;}
+.wd_inezll dl a{color:#b89f5f;}
+.wd_inezll dl span{color:#b89f5f;}
+.wd_inezll dd{line-height:28px; font-size:14px; height:140px; overflow:hidden;}	
+
+.wd_inebl{float:right; width:100%; margin-bottom:0%; z-index:100; position:relative;}
+.inh_l a{ float:right; font-size:14px; height:40px; line-height:40px; border:1px solid #d8d8d8; color:#000; border-radius:30px; padding:0 4%; margin-top:25px;}
+#mbdt{margin-top:1%;}
+.wd_ineb dl img{ float:left; width:36%;}
+.wd_ineb dt{ float:right; width:57%; line-height:28px; height:28px; overflow:hidden; font-size:16px; margin-bottom:5px; margin-top:1%;}
+.wd_ineb dt a{color:#b89f5f;}
+.wd_ineb dd{ float:right; width:57%; line-height:28px; font-size:14px; height:84px; overflow:hidden;}	
+.wd_ineb {
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.meeting_l h2{ text-align:center; font-size:16px; line-height:30px; margin-bottom:35px;}
+.meeting_l{ float:left; width:100%; line-height:30px; font-size:14px;}
+}
+@media screen and (max-width: 670px){
+.wd_navw ul{ padding:0;}
+.wd_navw li{ line-height:92px; padding:0 20px; float:left;}
+.wd_navw li a{ font-size:16px; color:#FFF;}
+.wd_navw li a:hover{ color:#b89f5f;}
+#wd_nava{ color:#b89f5f;}	
+	
+.wd_inell{ float:left; width:100%; margin-bottom:30px;}
+.wd_inelz{ float:right; width:100%;}	
+
+.wd_inezl{ float:left; width:100%; margin-bottom:0;}
+.wd_inezz{ float:right; width:100%;}
+.wd_inezz img{ width:100%;}	
+
+.splendid_l{ float:left; width:100%; margin-top:30px;}
+.splendid dl{ width:100%; float:left; margin-bottom:50px;}
+.splendid dl img{ float:left; width:36%;}
+.splendid dt{ float:right; width:57%; line-height:28px; height:28px; overflow:hidden; font-size:16px; margin-bottom:10px; margin-top:1%;}
+.splendid dd{ float:right; width:57%; line-height:28px; font-size:14px; height:84px; overflow:hidden;}
+}
+
+@media screen and (max-width: 600px){
+.guests_l{ float:left; width:100%; margin-top:30px; margin-bottom:50px;}
+.guests_l dl{ width:98%; padding:0 1%; float:left; margin:0 1%; margin-bottom:50px; overflow:auto; border:0px solid #d8d8d8; border-radius:3px; background:url("../wd_images/dfgv.jpg") center center no-repeat;}
+.guests_l dl img{ float:left; width:43%; border-radius:3px;}
+.guests_l dt{ float:right; width:50%; line-height:28px; height:28px; color:#b89f5f; overflow:hidden; font-size:20px; margin-bottom:10px; margin-top:15%;}
+.guests_l dd{ float:right; width:50%; color:#aeaeae; font-size:16px;}
+}
+@media screen and (max-width: 520px){
+.wd_navw li{padding:0 15px; float:left;}
+	
+.wd_inezbz{margin-bottom:0px;}
+.wd_inezbl li{ width:100%; float:left; margin:0; text-align:center; font-size:14px; margin-bottom:30px;}
+.wd_inezbl li img{ width:100%;}	
+.wd_inezbz li{ width:100%; float:left; margin:0; text-align:center; font-size:14px; margin-bottom:30px;}
+.wd_inezbz li img{ width:100%;}	
+
+.wd_ineb dl{ width:100%; float:left; margin-bottom:50px;}
+.wd_ineb dl img{ float:left; width:100%; margin-bottom:30px;}
+.wd_ineb dt{ float:right; width:100%;}
+.wd_ineb dd{ float:right; width:100%;}
+
+.splendid_l{ float:left; width:100%; margin-top:30px;}
+.splendid dl{ width:100%; float:left; margin-bottom:50px;}
+.splendid dl img{ float:left; width:100%; margin-bottom:30px;}
+.splendid dt{ float:right; width:100%; margin-top:1%;}
+.splendid dd{ float:right; width:100%; }
+}
+@media screen and (max-width: 480px){
+.wd_nav {
+	margin-top: -210px;
+	}
+}
+@media screen and (max-width: 465px){
+.wd_nav {
+    width: 100%;
+    float: left;
+    background: rgba(0, 0, 0, .9);
+	margin-top: -210px;
+	height:60px;
+	padding:5px 0;
+	position:relative; z-index:1000;
+	}
+.wd_navw li{ line-height:30px; padding:0 15px; float:left;}
+.wd_navw li a{ font-size:16px; color:#FFF;}	
+
+}
