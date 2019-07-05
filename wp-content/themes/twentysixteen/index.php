@@ -1,7 +1,10 @@
 <?php
 get_header();
 $getNavigationBar = getNavigationBar();
-
+$banner = show_banners();
+echo '<pre>';
+var_dump($banner);
+die;
 ?>
 
 <body>
@@ -102,13 +105,13 @@ $getNavigationBar = getNavigationBar();
             </a>
             <ul>
                 <li class="active">
-                    <a href="index.htm">
+                    <a href="?lang=zh">
                         <div class="icon">
                             <span>de</span></div>
                     </a>
                 </li>
                 <li class=" ">
-                    <a href="en\index.htm">
+                    <a href="?lang=en">
                         <div class="icon">
                             <span>en</span></div>
                     </a>
@@ -194,10 +197,16 @@ $getNavigationBar = getNavigationBar();
             <i class="material-icons">arrow_forward</i></a>
     </div>
 </div>
+<!--轮播图的部分-->
 <section class="Pageentry_Header_Slider" id="">
-    <div class="main_home_slider
-      has-autoplay
-      ">
+    <div class="main_home_slider has-autoplay">
+        <?php
+        var_dump($banner);
+        foreach($banner as $bann){
+
+        }
+
+        ?>
         <div class="home_slider_item">
             <div class="home_slider ie_hide object_fit_image">
                 <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
@@ -230,65 +239,65 @@ $getNavigationBar = getNavigationBar();
                 </div>
             </div>
         </div>
-        <div class="home_slider_item">
-            <div class="home_slider ie_hide object_fit_image">
-                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
-                <picture>
-                    <source media="(min-width: 1440px)" data-srcset='Public/banner/csm_knoll-fassade-2016x840-02_82fa01cefb.jpg'>
-                    <source media="(min-width: 1020px)" data-srcset='/Public/banner/csm_knoll-fassade-2016x840-02_33b65695b9.jpg'>
-                    <source media="(min-width: 768px)" data-srcset='/Public/banner/csm_knoll-fassade-2016x840-02_7b577dbd68.jpg'>
-                    <source data-srcset='/Public/banner/csm_knoll-fassade-2016x840-02_67d3e7af2f.jpg'>
-                    <img data-src='Public/banner/csm_knoll-fassade-2016x840-02_33b65695b9.jpg' alt="Verwaltungsgebäude der KNOLL Maschinenbau GmbH" style="width: 100%;"></source>
-                    </source>
-                    </source>
-                    </source>
-                </picture>
-            </div>
-            <div class="banner_bottom">
-                <div class="container">
-                    <div class="banner_bottom_slider">
-                        <div class="banner_slider_dv">
-                            <div class="banner_slider_text">
-                                <h1>
-                                    <!--TYPO3SEARCH_begin-->Mut zu Innovationen und Leidenschaft für Kundenlösungen. Das ist KNOLL. Willkommen in unserem Unternehmen.
-                                    <!--TYPO3SEARCH_end--></h1>
-                                <div class="banner_link">
-                                    <a href="unternehmen\index.htm" class="hyphenate">Neugierig?
-                                        <i class="material-icons donthyphenate">arrow_forward</i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="home_slider_item">
-            <div class="home_slider ie_hide object_fit_image">
-                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
-                <picture>
-                    <source media="(min-width: 1440px)" data-srcset='/Public/banner/csm_knoll-header-abendstimmung-2016x840_b429091610.jpg'>
-                    <source media="(min-width: 1020px)" data-srcset='/Public/banner/csm_knoll-header-abendstimmung-2016x840_ddbf4c7718.jpg'>
-                    <source media="(min-width: 768px)" data-srcset='/Public/banner/csm_knoll-header-abendstimmung-2016x840_e5b8a65c0a.jpg'>
-                    <source data-srcset='Public/banner/csm_knoll-header-abendstimmung-2016x840_c95fb12749.jpg'>
-                    <img data-src='/Public/banner/csm_knoll-header-abendstimmung-2016x840_ddbf4c7718.jpg' alt="Luftansicht bei Dämmerung - KNOLL Maschinenbau GmbH" style="width: 100%;"></source>
-                    </source>
-                    </source>
-                    </source>
-                </picture>
-            </div>
-            <div class="banner_bottom">
-                <div class="container">
-                    <div class="banner_bottom_slider">
-                        <div class="banner_slider_dv">
-                            <div class="banner_slider_text">
-                                <h1>
-                                    <!--TYPO3SEARCH_begin-->Der Masterplan ist umgesetzt. Die letzten 5 Jahre hat KNOLL in Gebäude, Logistik und Produktionstechnik investiert.
-                                    <!--TYPO3SEARCH_end--></h1></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="home_slider_item">-->
+<!--            <div class="home_slider ie_hide object_fit_image">-->
+<!--                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->-->
+<!--                <picture>-->
+<!--                    <source media="(min-width: 1440px)" data-srcset='Public/banner/csm_knoll-fassade-2016x840-02_82fa01cefb.jpg'>-->
+<!--                    <source media="(min-width: 1020px)" data-srcset='/Public/banner/csm_knoll-fassade-2016x840-02_33b65695b9.jpg'>-->
+<!--                    <source media="(min-width: 768px)" data-srcset='/Public/banner/csm_knoll-fassade-2016x840-02_7b577dbd68.jpg'>-->
+<!--                    <source data-srcset='/Public/banner/csm_knoll-fassade-2016x840-02_67d3e7af2f.jpg'>-->
+<!--                    <img data-src='Public/banner/csm_knoll-fassade-2016x840-02_33b65695b9.jpg' alt="Verwaltungsgebäude der KNOLL Maschinenbau GmbH" style="width: 100%;"></source>-->
+<!--                    </source>-->
+<!--                    </source>-->
+<!--                    </source>-->
+<!--                </picture>-->
+<!--            </div>-->
+<!--            <div class="banner_bottom">-->
+<!--                <div class="container">-->
+<!--                    <div class="banner_bottom_slider">-->
+<!--                        <div class="banner_slider_dv">-->
+<!--                            <div class="banner_slider_text">-->
+<!--                                <h1>-->
+<!--                                    <!--TYPO3SEARCH_begin-->Mut zu Innovationen und Leidenschaft für Kundenlösungen. Das ist KNOLL. Willkommen in unserem Unternehmen.-->
+<!--                                    <!--TYPO3SEARCH_end--></h1>-->
+<!--                                <div class="banner_link">-->
+<!--                                    <a href="unternehmen\index.htm" class="hyphenate">Neugierig?-->
+<!--                                        <i class="material-icons donthyphenate">arrow_forward</i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="home_slider_item">-->
+<!--            <div class="home_slider ie_hide object_fit_image">-->
+<!--                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->-->
+<!--                <picture>-->
+<!--                    <source media="(min-width: 1440px)" data-srcset='/Public/banner/csm_knoll-header-abendstimmung-2016x840_b429091610.jpg'>-->
+<!--                    <source media="(min-width: 1020px)" data-srcset='/Public/banner/csm_knoll-header-abendstimmung-2016x840_ddbf4c7718.jpg'>-->
+<!--                    <source media="(min-width: 768px)" data-srcset='/Public/banner/csm_knoll-header-abendstimmung-2016x840_e5b8a65c0a.jpg'>-->
+<!--                    <source data-srcset='Public/banner/csm_knoll-header-abendstimmung-2016x840_c95fb12749.jpg'>-->
+<!--                    <img data-src='/Public/banner/csm_knoll-header-abendstimmung-2016x840_ddbf4c7718.jpg' alt="Luftansicht bei Dämmerung - KNOLL Maschinenbau GmbH" style="width: 100%;"></source>-->
+<!--                    </source>-->
+<!--                    </source>-->
+<!--                    </source>-->
+<!--                </picture>-->
+<!--            </div>-->
+<!--            <div class="banner_bottom">-->
+<!--                <div class="container">-->
+<!--                    <div class="banner_bottom_slider">-->
+<!--                        <div class="banner_slider_dv">-->
+<!--                            <div class="banner_slider_text">-->
+<!--                                <h1>-->
+<!--                                    <!--TYPO3SEARCH_begin-->Der Masterplan ist umgesetzt. Die letzten 5 Jahre hat KNOLL in Gebäude, Logistik und Produktionstechnik investiert.-->
+<!--                                    <!--TYPO3SEARCH_end--></h1></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 <section class="Headline_Copy_Image secdv no_background remove_bottom_padding " id="">
