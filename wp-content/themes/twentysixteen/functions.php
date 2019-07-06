@@ -526,15 +526,20 @@ function twentysixteen_post_thumbnail_sizes_attr($attr, $attachment, $size)
 function get_houzhui()
 {
     $host = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $houzhui = '_zh';
     $position = strpos($host, '_en');
     $position2 = strpos($host, '/en');
+    $position2_1 = strpos($host, '?lang=en');
+
+
     $position3 = strpos($host, '_zh');
     $position4 = strpos($host, '/zh');
+    $position4_1 = strpos($host, '?lang=zh');
 
-    if ($position || $position2) {
+    if ($position || $position2 ||$position2_1) {
         $houzhui = '_en';
     }
-    if ($position3 || $position4) {
+    if ($position3 || $position4 || $position4_1) {
         $houzhui = '_zh';
     }
     return $houzhui;
