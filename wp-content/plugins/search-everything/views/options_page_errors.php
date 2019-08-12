@@ -7,5 +7,5 @@
 			<?php endforeach; ?>
 		</ul>
 	</p>
-	<p>Please go <a href="#" class="se-back">back</a> and check your settings again.</p>
+	<p>Please go <a href="/#" class="se-back">back</a> and check your settings again.</p>
 </div>

@@ -569,66 +569,6 @@ function term_id_sort($args)
     }
 }
 
-
-function description_split($args)
-{
-    if (preg_match("/^\d*$/", $args)) {
-        $args = DeleteHtml($args);
-        $ex_des_n['order'] = (int)$args;
-    } else {
-        if (isset($args)) {
-            $args = DeleteHtml($args);
-            $ex_des_n['image_url'] = $args;
-        }
-        if (strpos($args, '[new_url') > -1 || strpos($args, '[image_url') > -1 || strpos($args, '[show_first_post') > -1 || strpos($args, '[order') > -1) {
-            $ex_des = explode(']', $args);
-            foreach ($ex_des as $ex_des_k => $ex_des_v) {
-                $ex_des_n[$ex_des_k] = DeleteHtml($ex_des_v);
-                if (strpos($ex_des_v, '[new_url') > -1) {
-                    $ex_des_n['[new_url='] = DeleteHtml(str_replace('[new_url=', '', $ex_des[$ex_des_k]));
-                    if ($ex_des_n['[new_url='] == "[new_url") {
-                        unset($ex_des_n['[new_url=']);
-                    }
-                } else if (strpos($ex_des_v, '[image_url') > -1) {
-                    $ex_des_n['image_url'] = DeleteHtml(str_replace('[image_url=', '', $ex_des[$ex_des_k]));
-                } else if (strpos($ex_des_v, '[order') > -1) {
-                    $ex_des_n['order'] = (int)str_replace('[order=', '', $ex_des[$ex_des_k]);
-
-                } else if (strpos($ex_des_v, '[show_first_post') > -1) {
-                    $ex_des_n['show_first_post'] = DeleteHtml(str_replace('[show_first_post=', '', $ex_des[$ex_des_k]));
-                    if ($ex_des_n['show_first_post'] == 'true') {
-                        $ex_des_n['show_first_post'] = true;
-                    } else {
-                        $ex_des_n['show_first_post'] = false;
-                    }
-                } else if (strpos($ex_des_v, '[subtitle') > -1) {
-                    $ex_des_n['subtitle'] = DeleteHtml(str_replace('[subtitle=', '', $ex_des[$ex_des_k]));
-                    if ($ex_des_n['subtitle'] == 'null') {
-                        unset($ex_des_n['subtitle']);
-                    } else {
-                        $ex_des_n['subtitle'] = true;
-                    }
-                } else if (strpos($ex_des_v, '[dictionary') > -1) {
-                    $ex_des_n['dictionary'] = DeleteHtml(str_replace('[dictionary=', '', $ex_des[$ex_des_k]));
-                    if ($ex_des_n['dictionary'] == 'null') {
-                        unset($ex_des_n['dictionary']);
-                    } else {
-                        $ex_des_n['dictionary'] = true;
-                    }
-                }
-                unset($ex_des_n[$ex_des_k]);
-            }
-        }
-
-    }
-    if (isset($ex_des_n)) {
-        return $ex_des_n;
-    } else {
-        return '';
-    }
-
-}
-
 function get_canshu()
 {
     $host = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -681,10 +621,10 @@ function show_banners()
     global $wpdb;
     $request = "select * from $wpdb->posts where post_type='banner' and post_status='publish'";
     $categorys = $wpdb->get_results($request);
-
-    $houzhui = get_houzhui();
+    echo '<pre>';
+    var_dump($categorys);
+    die;
     foreach ($categorys as $v) {
-
         if ($v->menu_order == 0) {
             $category_new[$v->ID]['id'] = $v;
             $sql2 = "select * from $wpdb->posts where post_parent='" . $v->ID . "'";
@@ -735,10 +675,6 @@ function icon_lv3_first()
         }
     }
     return $arr;
-}
-
-function post_id_parent($obj)
-{
 }
 
 function search($args)
@@ -1233,8 +1169,85 @@ function getNavigationBar()
             $cateATree[get_category($cate->parent)->parent]['child'][get_category($cate->parent)->term_id]['child'][$cate->term_id]['name'] = trim($cate->name);
         }
     }
-        return $cateATree;
 
+    return $cateATree;
+
+}
+//获取某个分类下的所有子分类
+function my_list_categories( $args = '' ) {
+    $defaults = array(
+        'child_of'            => 0,
+        'current_category'    => 0,
+        'depth'               => 0,
+        'echo'                => 1,
+        'exclude'             => '',
+        'exclude_tree'        => '',
+        'feed'                => '',
+        'feed_image'          => '',
+        'feed_type'           => '',
+        'hide_empty'          => 1,
+        'hide_title_if_empty' => false,
+        'hierarchical'        => true,
+        'order'               => 'ASC',
+        'orderby'             => 'name',
+        'separator'           => '<br />',
+        'show_count'          => 0,
+        'show_option_all'     => '',
+        'show_option_none'    => __( 'No categories' ),
+        'style'               => 'list',
+        'taxonomy'            => 'category',
+        'title_li'            => __( 'Categories' ),
+        'use_desc_for_title'  => 1,
+    );
+
+    $r = wp_parse_args( $args, $defaults );
+
+    if ( !isset( $r['pad_counts'] ) && $r['show_count'] && $r['hierarchical'] )
+        $r['pad_counts'] = true;
+
+    // Descendants of exclusions should be excluded too.
+    if ( true == $r['hierarchical'] ) {
+        $exclude_tree = array();
+
+        if ( $r['exclude_tree'] ) {
+            $exclude_tree = array_merge( $exclude_tree, wp_parse_id_list( $r['exclude_tree'] ) );
+        }
+
+        if ( $r['exclude'] ) {
+            $exclude_tree = array_merge( $exclude_tree, wp_parse_id_list( $r['exclude'] ) );
+        }
+
+        $r['exclude_tree'] = $exclude_tree;
+        $r['exclude'] = '';
+    }
+
+    if ( ! isset( $r['class'] ) )
+        $r['class'] = ( 'category' == $r['taxonomy'] ) ? 'categories' : $r['taxonomy'];
+
+    if ( ! taxonomy_exists( $r['taxonomy'] ) ) {
+        return false;
+    }
+
+    $categories = get_categories( $r );
+
+    return $categories;
+}
+function emptyAdjustment($canshu)
+{
+    if (empty($canshu)) {
+        return '';
+    } else {
+        return $canshu[0];
+    }
+}
+
+function get_post_info_byname($name)
+{
+    return array(
+        'id' => get_cat_ID($name),
+        'post' => get_posts("category=" . get_cat_ID($name) . "&order=ASC&numberposts=1000"),
+        'cate' => get_category(get_cat_ID($name)),
+    );
 }
 
 add_filter('widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args');

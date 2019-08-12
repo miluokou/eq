@@ -635,9 +635,9 @@ function wp_list_categories( $args = '' ) {
 	$html = apply_filters( 'wp_list_categories', $output, $args );
 
 	if ( $r['echo'] ) {
-		echo $html;
+		return $categories;
 	} else {
-		return $html;
+		return $categories;
 	}
 }
 

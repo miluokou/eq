@@ -3,6 +3,7 @@ jQuery(document).ready(function(){
     if (jQuery('input.search, input.tx-indexedsearch-searchbox-sword, input.indexed-search-atocomplete-sword, input.indexed-search-autocomplete-sword').length > 0) {
         initIndexSearchAutocomplete();
     }
+    $('#myNavbar div.ulwrapper ul div.ulwrapper li').removeAttr('class');
 });
 
 function initIndexSearchAutocomplete() {

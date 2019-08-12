@@ -1,110 +1,45 @@
 <?php
 get_header();
-$getNavigationBar = getNavigationBar();
-$banner = show_banners();
+$catesLv1 = get_parent0();
+$serverName = 'http://eq.miluokou.com';
+if($_SERVER['HTTP_HOST'] =='localhost'){
+    $serverName = 'http://localhost/wordpress';
+}
+
+
 $houzhui = get_houzhui();
 if($houzhui == '_zh'){
     $newsCateId = get_cat_ID('新闻');
+    $componyId = get_cat_ID('公司');
 }
-$posts = get_posts("category=" . $newsCateId . "&order=ASC&numberposts=1000");
-$catesLv1 = get_parent0();
+$posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
 
+$newsLink = get_category_link($newsCateId);
+$componyLink = get_category_link($componyId);
+$catesLv1 = get_parent0();
+$banner = show_banners();
+echo '<pre>';
+var_dump($banner);
+die;
 ?>
 
 <body>
-<div id="loader">
-    <div class="wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-</div>
-<div class="header_div">
-    <nav class="navbar">
-        <div class="navbar-header">
-            <a class="navbar-brand-logo" href="index.htm">
-                <img src="fileadmin\knoll\Resources\Public\images\KNOLL-Logo_4c.svg" alt="" class="img-responsive"></a>
 
-            <button type="button" class="navbar-toggle" data-target="#myNavbar" id="myBtnNavbar" aria-expanded="false">
-                <span class="icon-bar bar1"></span>
-                <span class="icon-bar bar2"></span>
-                <span class="icon-bar bar3"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <div class="menu_list">
-                <ul class="nav navbar-nav">
-                    <div class="ulwrapper">
-                        <?php
-                            foreach ($getNavigationBar as $term_id => $lv1title) {
-                                echo '<li class="sub"><a title="'.$lv1title['name'].'" href="'.get_category_link($term_id).'">'.$lv1title['name'].'</a>';
-                                if(!empty($lv1title['child'])){
-                                    echo '<ul class=""><div class="ulwrapper">';
-                                    foreach ($lv1title['child'] as $lv2term_id => $lv2title){
-                                        echo '<li class="sub "><a title="'.$lv2title['name'].'" href="'.get_category_link($lv2term_id).'">'.$lv2title['name'].'</a>';
-                                        if(!empty($lv2title['child'])){
-                                            echo '<ul class=""><div class="ulwrapper">';
-                                            foreach ($lv2title['child'] as $lv3term_id => $lv3title){
-                                                echo '<li class="sub"><a title="'.$lv3title['name'].'" href="'.get_category_link($lv3term_id).'">'.$lv3title['name'].'</a></li>';
-                                            }
-                                            echo '</div></ul>';
-                                        }
-                                        echo '</li>';
-                                    }
-                                    echo ' </div></ul>';
-                                }
-                                echo '</li>';
-                            }
-                        ?>
-                    </div>
-                </ul>
-                <div class="menu_bottom">
-                    <div class="language_div">
-                        <div class="language_text">Sprache auswählen:</div>
-                        <ul class="bar_open">
-                            <li class="active">
-                                <a href="index.htm">
-                                    <div class="icon">
-                                        <span>de</span></div>
-                                </a>
-                            </li>
-                            <li class=" ">
-                                <a href="en\index.htm">
-                                    <div class="icon">
-                                        <span>en</span></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="search_div_mobile">
-                        <div class="form-group search_container_mobile">
-                            <input type="text" class="form-control" id="search_container_mobile_input">
-                            <button id="search_container_mobile_submit" type="button" class="btn btn_custom">
-                                <i class="material-icons">search</i></button>
-                        </div>
-                       </div>
-                    <div class="person_contact lang_bar_open mobile">
-                     </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
+<?php get_template_part( 'template-parts/indexPage/navBar');?>
+
 <div class="header_right">
     <ul>
         <li class="search_btn">
             <a>
                 <div class="icon">
-                    <i class="material-icons">search</i></div>
+                    <i class="material-icons">搜索</i></div>
             </a>
         </li>
         <li class="language_btn  ">
             <a>
                 <div class="icon language_icon">
                     <span>DE</span>
-                    <i class="material-icons">language</i></div>
+                    <i class="material-icons">语言</i></div>
             </a>
             <ul>
                 <li class="active">
@@ -199,46 +134,7 @@ $catesLv1 = get_parent0();
             <i class="material-icons">arrow_forward</i></a>
     </div>
 </div>
-<!--轮播图的部分-->
-<section class="Pageentry_Header_Slider" id="">
-    <div class="main_home_slider has-autoplay">
-        <?php
-
-        foreach($banner as $bann){
-            ?>
-            <div class="home_slider_item">
-                <div class="home_slider ie_hide object_fit_image">
-                    <picture>
-                        <source media="(min-width: 1440px)" data-srcset='<?php  echo $bann['img_src'];?>'>
-                        <source media="(min-width: 1020px)" data-srcset='<?php  echo $bann['img_src'];?>'>
-                        <source media="(min-width: 768px)" data-srcset='<?php  echo $bann['img_src'];?>'>
-                        <source data-srcset='<?php  echo $bann['img_src'];?>'>
-                        <img data-src='<?php  echo $bann['img_src'];?>' alt="" style="width: 100%;"></source>
-                        </source>
-                        </source>
-                        </source>
-                    </picture>
-                </div>
-                <div class="banner_bottom">
-                    <div class="container">
-                        <div class="banner_bottom_slider">
-                            <div class="banner_slider_dv">
-                                <div class="banner_slider_text">
-                                    <h1><?php echo $bann['id']->post_content;?></h1>
-                                    <div class="banner_link">
-                                        <a href="<?php echo $bann['id']->guid;?>" class="hyphenate">Mehr erfahren
-                                            <i class="material-icons donthyphenate">arrow_forward</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <?php }?>
-    </div>
-</section>
+<?php  get_template_part( 'template-parts/common/rotaryPlantingMap');?>
 <section class="Headline_Copy_Image secdv no_background remove_bottom_padding " id="">
     <div class="container">
         <div class="row">
@@ -268,13 +164,14 @@ $catesLv1 = get_parent0();
 <!--                    新闻遍历post-->
                     <?php
                         foreach ($posts as $post){
+                            $suoImageLink = 'javascript::void(0);';
                             $args = get_metadata('post', $post->ID, $key, false);
-                            if(!empty($args['image'])){
-                                $suoImageLink = $args['image'][0];
+                            if(!empty($args['新闻显示到首页的图片封面'])){
+                                $suoImageLink = $args['新闻显示到首页的图片封面'][0];
                             }
                             ?>
                             <div class='col-sm-3'>
-                                <a href='aktuelles\unternehmen\ausgepackt-das-gebaeude-k1-eroeffnet-ende-mai\index.htm' class="post-item">
+                                <a href='<?php echo $post->guid;?>' class="post-item">
                                     <!--=====================P artials/List/OneRowSlider.html -->
                                     <div class="postimg">
                                         <picture>
@@ -283,7 +180,7 @@ $catesLv1 = get_parent0();
                                             <source media="(min-width: 768px)" data-srcset='<?php echo $suoImageLink;?>'>
                                             <source media="(min-width: 480px)" data-srcset='<?php echo $suoImageLink;?>'>
                                             <source media="(max-width: 479px)" data-srcset='<?php echo $suoImageLink;?>'>
-                                            <img data-src='<?php echo $suoImageLink;?>' style="width: 100%"></source>
+                                            <img data-src='<?php echo $post->guid;?>' style="width: 100%"></source>
                                             </source>
                                             </source>
                                             </source>
@@ -299,7 +196,7 @@ $catesLv1 = get_parent0();
                                             <span class="news-list-category">Unternehmen</span></div>
                                         <div class="desc hyphenate"><?php echo  $post->post_title;?><br></div>
                                         <div class="comman_para_link">
-                                          <span href="aktuelles\unternehmen\ausgepackt-das-gebaeude-k1-eroeffnet-ende-mai\index.htm">Mehr erfahren
+                                          <span href="aktuelles\unternehmen\ausgepackt-das-gebaeude-k1-eroeffnet-ende-mai\index.htm">了解更多
                                             <i class="material-icons">arrow_forward</i></span>
                                         </div>
                                     </div>
@@ -933,21 +830,20 @@ $catesLv1 = get_parent0();
         <div class="row">
             <div class="col-sm-6">
                 <h2 class='big remove_margin_header_top hyphenate'>
-                    公司
                     </h2>
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
                     <p>我们专注于为客户做好事。为此，我们为公司创造了最佳条件。我们运动的创新和进步。 </p>
                  </div>
 
                 <div class="common_para comman_para_link">
-                    <a href='unternehmen\index.htm'>对更多感兴趣？
+                    <a href='<?php echo $componyLink;?>'>对更多感兴趣？
                         <i class="material-icons">arrow_forward</i></a>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class='right_image'>
                     <picture>
-                        <img data-src="http://localhost/wordpress/wp-content/uploads/2019/07/right_image.jpg" alt="Einblick in die Blechbearbeitung der KNOLL Maschinenbau GmbH"></picture>
+                        <img data-src="<?php echo $serverName;?>/wp-content/uploads/2019/07/right_image.jpg" alt="Einblick in die Blechbearbeitung der KNOLL Maschinenbau GmbH"></picture>
                     <div class="headline_copy_image_variation_1">
                         <div class="overlay-with-text">
                             <div class="inner-dv">
@@ -989,7 +885,7 @@ $catesLv1 = get_parent0();
 
                                 ?>
                                 <div class="col-sm-3 col-xs-6 contbx">
-                                    <a href="einzelanlagen\index.htm" class="manage_div_content_boxes">
+                                    <a href="<?php  echo get_category_link($cateLv1->term_id);?>" class="manage_div_content_boxes">
                                         <div class="image_div smlbx">
                                             <picture>
                                                 <source media="(min-width: 1200px)" data-srcset='<?php  echo $cateLv1->description;?>'>
@@ -1214,11 +1110,11 @@ $catesLv1 = get_parent0();
             <div class="col-sm-6">
                 <div class='right_image manage_div'>
                     <picture>
-                        <source media="(min-width: 1024px)" data-srcset="/fileadmin/Home/knoll-hotline-644x644-01.jpg">
-                        <source media="(min-width: 768px)" data-srcset="/fileadmin/_processed_/4/f/csm_knoll-hotline-644x644-01_47f5ef77ab.jpg">
-                        <source media="(min-width: 480px)" data-srcset="/fileadmin/_processed_/4/f/csm_knoll-hotline-644x644-01_47f5ef77ab.jpg">
-                        <source media="(max-width: 479px)" data-srcset="/fileadmin/_processed_/4/f/csm_knoll-hotline-644x644-01_4a63844377.jpg">
-                        <img data-src="/fileadmin/_processed_/4/f/csm_knoll-hotline-644x644-01_6213d9aa58.jpg" alt="Mitarbeiterin an der Service-Hotline - KNOLL Maschinenbau GmbH" style="width: 100%;"></source>
+                        <source media="(min-width: 1024px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
+                        <source media="(min-width: 768px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
+                        <source media="(min-width: 480px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
+                        <source media="(max-width: 479px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
+                        <img data-src="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg" alt="Mitarbeiterin an der Service-Hotline - KNOLL Maschinenbau GmbH" style="width: 100%;"></source>
                         </source>
                         </source>
                         </source>
@@ -1264,405 +1160,9 @@ $catesLv1 = get_parent0();
         </div>
     </div>
 </section>
-<footer id="footer">
-    <div class="footer_dv">
-        <div class="container">
-            <div class="row footer_menu_desktop visible-xs-block">
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/unternehmen/" class="">Unternehmen</a>-->
-                                <a class="hyphenate" title="Unternehmen" href="unternehmen\index.htm">Unternehmen</a>
-                            </h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/knoll-weltweit/">KNOLL weltweit</a>-->
-                                    <a class="hyphenate" title="KNOLL weltweit" href="unternehmen\knoll-weltweit\index.htm">KNOLL weltweit</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#geschaeftsleitung">Geschäftsleitung</a>-->
-                                    <a class="hyphenate" title="Geschäftsleitung" href="/unternehmen/geschaeftsleitung/">Geschäftsleitung</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#historie">Historie</a>-->
-                                    <a class="hyphenate" title="Historie" href="/unternehmen/historie/">Historie</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#unternehmensleitbild">Unternehmensleitbild</a>-->
-                                    <a class="hyphenate" title="Unternehmensleitbild" href="/unternehmen/unternehmensleitbild/">Unternehmensleitbild</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#portrait">Portrait</a>-->
-                                    <a class="hyphenate" title="Portrait" href="/unternehmen/portrait/">Portrait</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#zertifikate">Zertifikate</a>-->
-                                    <a class="hyphenate" title="Zertifikate" href="/unternehmen/zertifikate/">Zertifikate</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/einzelanlagen/" class="">Einzelanlagen</a>-->
-                                <a class="hyphenate" title="Einzelanlagen" href="einzelanlagen\index.htm">Einzelanlagen</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/hochdruckanlagen/">Hochdruckanlagen</a>-->
-                                    <a class="hyphenate" title="Hochdruckanlagen" href="einzelanlagen\hochdruckanlagen\index.htm">Hochdruckanlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/filteranlagen/">Filteranlagen</a>-->
-                                    <a class="hyphenate" title="Filteranlagen" href="einzelanlagen\filteranlagen\index.htm">Filteranlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/foerderanlagen/">Förderanlagen</a>-->
-                                    <a class="hyphenate" title="Förderanlagen" href="einzelanlagen\foerderanlagen\index.htm">Förderanlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/mms-controlube/">MMS ControLube</a>-->
-                                    <a class="hyphenate" title="MMS ControLube" href="einzelanlagen\mms-controlube\index.htm">MMS ControLube</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/zerkleinerungsanlagen/">Zerkleinerungsanlagen</a>-->
-                                    <a class="hyphenate" title="Zerkleinerungsanlagen" href="einzelanlagen\zerkleinerungsanlagen\index.htm">Zerkleinerungsanlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/#anwendungen">Anwendungen</a>-->
-                                    <a class="hyphenate" title="Anwendungen" href="/einzelanlagen/anwendungen/">Anwendungen</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/zentralsysteme/" class="">Zentralsysteme</a>-->
-                                <a class="hyphenate" title="Zentralsysteme" href="zentralsysteme\index.htm">Zentralsysteme</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-mit-pumptechnik/">Systeme mit Pumptechnik</a>-->
-                                    <a class="hyphenate" title="Systeme mit Pumptechnik" href="zentralsysteme\systeme-mit-pumptechnik\index.htm">Systeme mit Pumptechnik</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-mit-saugtechnik/">Systeme mit Saugtechnik</a>-->
-                                    <a class="hyphenate" title="Systeme mit Saugtechnik" href="zentralsysteme\systeme-mit-saugtechnik\index.htm">Systeme mit Saugtechnik</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-mit-sammelfoerderer/">Systeme mit Sammelförderer</a>-->
-                                    <a class="hyphenate" title="Systeme mit Sammelförderer" href="zentralsysteme\systeme-mit-sammelfoerderer\index.htm">Systeme mit Sammelförderer</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-zur-spaeneaufbereitung/">Systeme zur Späneaufbereitung</a>-->
-                                    <a class="hyphenate" title="Systeme zur Späneaufbereitung" href="zentralsysteme\systeme-zur-spaeneaufbereitung\index.htm">Systeme zur Späneaufbereitung</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/transportsysteme/" class="">Transportsysteme</a>-->
-                                <a class="hyphenate" title="Transportsysteme" href="transportsysteme\index.htm">Transportsysteme</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#montageanwendungen">Montageanwendungen</a>-->
-                                    <a class="hyphenate" title="Montageanwendungen" href="/transportsysteme/montageanwendungen/">Montageanwendungen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#logistikanwendungen">Logistikanwendungen</a>-->
-                                    <a class="hyphenate" title="Logistikanwendungen" href="/transportsysteme/logistikanwendungen/">Logistikanwendungen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#service">Dienstleistungen</a>-->
-                                    <a class="hyphenate" title="Dienstleistungen" href="/transportsysteme/dienstleistungen/">Dienstleistungen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#branchen">Branchen</a>-->
-                                    <a class="hyphenate" title="Branchen" href="/transportsysteme/branchen/">Branchen</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/pumpen/" class="">Pumpen</a>-->
-                                <a class="hyphenate" title="Pumpen" href="pumpen\index.htm">Pumpen</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/schraubenspindelpumpe-kts/">Schraubenspindelpumpe KTS</a>-->
-                                    <a class="hyphenate" title="Schraubenspindelpumpe KTS" href="pumpen\schraubenspindelpumpe-kts\index.htm">Schraubenspindelpumpe KTS</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/schraubenspindelpumpe-ktsv/">Schraubenspindelpumpe KTSV</a>-->
-                                    <a class="hyphenate" title="Schraubenspindelpumpe KTSV" href="pumpen\schraubenspindelpumpe-ktsv\index.htm">Schraubenspindelpumpe KTSV</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/kreiselpumpe/">Kreiselpumpe</a>-->
-                                    <a class="hyphenate" title="Kreiselpumpe" href="pumpen\kreiselpumpe\index.htm">Kreiselpumpe</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/exzenterschneckenpumpe-mx/">Exzenterschneckenpumpe MX</a>-->
-                                    <a class="hyphenate" title="Exzenterschneckenpumpe MX" href="pumpen\exzenterschneckenpumpe-mx\index.htm">Exzenterschneckenpumpe MX</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="service\index.htm" class="hyphenate test">Service</a></h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="aktuelles\index.htm" class="hyphenate test">Aktuelles</a></h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="kontakt\index.htm" class="hyphenate test">Kontakt</a></h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="karriere\index.htm" class="hyphenate test">Karriere</a></h4>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row hidden-xs">
-                <?php
 
+            <?php get_footer();?>
 
-                ?>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/unternehmen/" class="">Unternehmen</a>-->
-                                <a class="hyphenate" title="Unternehmen" href="unternehmen\index.htm">Unternehmen</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/knoll-weltweit/">KNOLL weltweit</a>-->
-                                    <a class="hyphenate" title="KNOLL weltweit" href="unternehmen\knoll-weltweit\index.htm">KNOLL weltweit</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#geschaeftsleitung">Geschäftsleitung</a>-->
-                                    <a class="hyphenate" title="Geschäftsleitung" href="/unternehmen/geschaeftsleitung/">Geschäftsleitung</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#historie">Historie</a>-->
-                                    <a class="hyphenate" title="Historie" href="/unternehmen/historie/">Historie</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#unternehmensleitbild">Unternehmensleitbild</a>-->
-                                    <a class="hyphenate" title="Unternehmensleitbild" href="/unternehmen/unternehmensleitbild/">Unternehmensleitbild</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#portrait">Portrait</a>-->
-                                    <a class="hyphenate" title="Portrait" href="/unternehmen/portrait/">Portrait</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/unternehmen/#zertifikate">Zertifikate</a>-->
-                                    <a class="hyphenate" title="Zertifikate" href="/unternehmen/zertifikate/">Zertifikate</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/einzelanlagen/" class="">Einzelanlagen</a>-->
-                                <a class="hyphenate" title="Einzelanlagen" href="einzelanlagen\index.htm">Einzelanlagen</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/hochdruckanlagen/">Hochdruckanlagen</a>-->
-                                    <a class="hyphenate" title="Hochdruckanlagen" href="einzelanlagen\hochdruckanlagen\index.htm">Hochdruckanlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/filteranlagen/">Filteranlagen</a>-->
-                                    <a class="hyphenate" title="Filteranlagen" href="einzelanlagen\filteranlagen\index.htm">Filteranlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/foerderanlagen/">Förderanlagen</a>-->
-                                    <a class="hyphenate" title="Förderanlagen" href="einzelanlagen\foerderanlagen\index.htm">Förderanlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/mms-controlube/">MMS ControLube</a>-->
-                                    <a class="hyphenate" title="MMS ControLube" href="einzelanlagen\mms-controlube\index.htm">MMS ControLube</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/zerkleinerungsanlagen/">Zerkleinerungsanlagen</a>-->
-                                    <a class="hyphenate" title="Zerkleinerungsanlagen" href="einzelanlagen\zerkleinerungsanlagen\index.htm">Zerkleinerungsanlagen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/einzelanlagen/#anwendungen">Anwendungen</a>-->
-                                    <a class="hyphenate" title="Anwendungen" href="/einzelanlagen/anwendungen/">Anwendungen</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/zentralsysteme/" class="">Zentralsysteme</a>-->
-                                <a class="hyphenate" title="Zentralsysteme" href="zentralsysteme\index.htm">Zentralsysteme</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-mit-pumptechnik/">Systeme mit Pumptechnik</a>-->
-                                    <a class="hyphenate" title="Systeme mit Pumptechnik" href="zentralsysteme\systeme-mit-pumptechnik\index.htm">Systeme mit Pumptechnik</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-mit-saugtechnik/">Systeme mit Saugtechnik</a>-->
-                                    <a class="hyphenate" title="Systeme mit Saugtechnik" href="zentralsysteme\systeme-mit-saugtechnik\index.htm">Systeme mit Saugtechnik</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-mit-sammelfoerderer/">Systeme mit Sammelförderer</a>-->
-                                    <a class="hyphenate" title="Systeme mit Sammelförderer" href="zentralsysteme\systeme-mit-sammelfoerderer\index.htm">Systeme mit Sammelförderer</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/zentralsysteme/systeme-zur-spaeneaufbereitung/">Systeme zur Späneaufbereitung</a>-->
-                                    <a class="hyphenate" title="Systeme zur Späneaufbereitung" href="zentralsysteme\systeme-zur-spaeneaufbereitung\index.htm">Systeme zur Späneaufbereitung</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/transportsysteme/" class="">Transportsysteme</a>-->
-                                <a class="hyphenate" title="Transportsysteme" href="transportsysteme\index.htm">Transportsysteme</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#montageanwendungen">Montageanwendungen</a>-->
-                                    <a class="hyphenate" title="Montageanwendungen" href="/transportsysteme/montageanwendungen/">Montageanwendungen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#logistikanwendungen">Logistikanwendungen</a>-->
-                                    <a class="hyphenate" title="Logistikanwendungen" href="/transportsysteme/logistikanwendungen/">Logistikanwendungen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#service">Dienstleistungen</a>-->
-                                    <a class="hyphenate" title="Dienstleistungen" href="/transportsysteme/dienstleistungen/">Dienstleistungen</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/transportsysteme/#branchen">Branchen</a>-->
-                                    <a class="hyphenate" title="Branchen" href="/transportsysteme/branchen/">Branchen</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <!--<a href="/pumpen/" class="">Pumpen</a>-->
-                                <a class="hyphenate" title="Pumpen" href="pumpen\index.htm">Pumpen</a></h4>
-                            <ul>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/schraubenspindelpumpe-kts/">Schraubenspindelpumpe KTS</a>-->
-                                    <a class="hyphenate" title="Schraubenspindelpumpe KTS" href="pumpen\schraubenspindelpumpe-kts\index.htm">Schraubenspindelpumpe KTS</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/schraubenspindelpumpe-ktsv/">Schraubenspindelpumpe KTSV</a>-->
-                                    <a class="hyphenate" title="Schraubenspindelpumpe KTSV" href="pumpen\schraubenspindelpumpe-ktsv\index.htm">Schraubenspindelpumpe KTSV</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/kreiselpumpe/">Kreiselpumpe</a>-->
-                                    <a class="hyphenate" title="Kreiselpumpe" href="pumpen\kreiselpumpe\index.htm">Kreiselpumpe</a></li>
-                                <li class="menu_sub">
-                                    <!--<a href="/pumpen/exzenterschneckenpumpe-mx/">Exzenterschneckenpumpe MX</a>-->
-                                    <a class="hyphenate" title="Exzenterschneckenpumpe MX" href="pumpen\exzenterschneckenpumpe-mx\index.htm">Exzenterschneckenpumpe MX</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="service\index.htm" class="hyphenate test">Service</a></h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="aktuelles\index.htm" class="hyphenate test">Aktuelles</a></h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="kontakt\index.htm" class="hyphenate test">Kontakt</a></h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-2">
-                    <ul class="menu_content">
-                        <li>
-                            <h4 class="menu_head">
-                                <a href="karriere\index.htm" class="hyphenate test">Karriere</a></h4>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="foot_left_grad foot_grad"></div>
-        <div class="foot_right_grad foot_grad"></div>
-    </div>
-    <div class="footer_bottom_dv">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="social_dv">
-                        <div class="tx-dce-pi1">
-                            <div class="socialtest"></div>
-                            <a href="https://www.facebook.com/knollausbildung/" target="_blank">
-                                <div class="icon">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    <p class="icon_text">Facebook</p></div>
-                            </a>
-                            <a href="https://www.xing.com/companies/knollmaschinenbaugmbh" target="_blank">
-                                <div class="icon">
-                                    <i class="fa fa-xing" aria-hidden="true"></i>
-                                    <p class="icon_text">Xing</p></div>
-                            </a>
-                            <a href="https://www.linkedin.com/company/knoll-maschinenbau-gmbh/" target="_blank">
-                                <div class="icon">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                    <p class="icon_text">LinkedIn</p></div>
-                            </a>
-                            <a href="https://www.instagram.com/knoll_maschinenbau/" target="_blank">
-                                <div class="icon">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    <p class="icon_text">Instagram</p></div>
-                            </a>
-                            <a href="https://www.youtube.com/user/Knollitworks" target="_blank">
-                                <div class="icon">
-                                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                                    <p class="icon_text">YouTube</p></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <nav class="footer_mid">
-                        <a title="Impressum" href="impressum\index.htm">Impressum</a>
-                        <a title="Datenschutz" href="datenschutz\index.htm">Datenschutz</a>
-                        <a title="Informationspflicht nach Art. 13" href="informationspflicht-nach-art-13\index.htm">Informationspflicht nach Art. 13</a>
-                        <a title="AGB" href="agb\index.htm">AGB</a>
-                        <a title="Downloads" href="downloads\index.htm">Downloads</a></nav>
-                </div>
-                <div class="col-md-3 text-right">
-                    <div class="copyright">
-                        <i class="fa fa-copyright" aria-hidden="true"></i>
-                        <p>KNOLL Maschinenbau GmbH
-                        <p></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<div id="cookies" style="opacity: 0">
-    <div class="wrapper">
-        <div class="content">
-            <p>Wir verwenden Cookies, um diese Webseite bestmöglich an Ihre Bedürfnisse anzupassen sowie unsere Serviceleistungen zu verbessern. Die weitere Nutzung der Webseite wird als Zustimmung zu unseren
-                <a href="datenschutz\index.htm">Regelungen über Cookies</a>verstanden.</p></div>
-        <div class="buttons">
-            <a href="datenschutz\index.htm" class="btn_c">Mehr</a>
-            <a href="javascript: void(0)" class="btn_c">OK</a></div>
-    </div>
-</div>
-<script src="typo3temp\assets\compressed\merged-12bbe16b617c7915aa2c1a50e2b4f494-97c3270d899c6a94e15385184d687000.js?1560585239" type="text/javascript"></script>
-<script src="typo3temp\assets\compressed\merged-6b0b01f3db70003843ab03342a10e96e-e805599761e92044bfb05456870afe47.js?1558096143" type="text/javascript"></script>
-</body>
+      </body>
 
 </html>

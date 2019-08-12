@@ -7,7 +7,7 @@ $se_meta = false;
 $se_global_notice_pages = array('plugins.php', 'index.php', 'update-core.php');
 
 $se_response_messages = array(
-	SE_PREFS_STATE_NOT_ENGLISH => __('<a href="http://support.zemanta.com/customer/portal/articles/674752-which-languages-does-zemanta-support" target="_blank">Your blog is not in English</a>', 'SearchEverything'),
+	SE_PREFS_STATE_NOT_ENGLISH => __('<a href="/http://support.zemanta.com/customer/portal/articles/674752-which-languages-does-zemanta-support" target="_blank">Your blog is not in English</a>', 'SearchEverything'),
 	SE_PREFS_STATE_EMPTY => __('Your blog feed is empty', 'SearchEverything'),
 	SE_PREFS_STATE_FAILED => __('Unable to reslove URL to a source feed' , 'SearchEverything'),
 	SE_PREFS_STATE_FOUND => __('You are connected to Zemanta network', 'SearchEverything')
@@ -79,7 +79,7 @@ function se_set_global_notice() {
 	$se_meta = get_option('se_meta', false);
 	$se_meta['se_global_notice'] = array(
 		'title' => 'Searching for your car keys?',
-		'message' => 'Well, there are some things our plugin can\'t search for - your car keys, your wallet, a soulmate and <strong>unregistered custom post types</strong> :) <br> It searches for almost everything else, but it also does some other amazing stuff, like ... research. <a href="'.$url.'" target="_blank">Check it out!</a>'
+		'message' => 'Well, there are some things our plugin can\'t search for - your car keys, your wallet, a soulmate and <strong>unregistered custom post types</strong> :) <br> It searches for almost everything else, but it also does some other amazing stuff, like ... research. <a href="/'.$url.'" target="_blank">Check it out!</a>'
 	);
 	se_update_meta($se_meta);
 }

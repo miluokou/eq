@@ -18,7 +18,7 @@
 	</header><!-- .entry-header -->
 
 	<?php twentysixteen_excerpt(); ?>
-
+con
 	<?php twentysixteen_post_thumbnail(); ?>
 
 	<div class="entry-content">
