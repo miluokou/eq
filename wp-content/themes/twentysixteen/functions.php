@@ -621,10 +621,8 @@ function show_banners()
     global $wpdb;
     $request = "select * from $wpdb->posts where post_type='banner' and post_status='publish'";
     $categorys = $wpdb->get_results($request);
-    echo '<pre>';
-    var_dump($categorys);
-    die;
     foreach ($categorys as $v) {
+
         if ($v->menu_order == 0) {
             $category_new[$v->ID]['id'] = $v;
             $sql2 = "select * from $wpdb->posts where post_parent='" . $v->ID . "'";

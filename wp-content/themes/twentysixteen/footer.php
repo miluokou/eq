@@ -313,3 +313,4 @@ $getNavigationBar = getNavigationBar();
         type="text/javascript"></script>
 <script src="<?php echo $url; ?>\typo3temp\assets\compressed\merged-6b0b01f3db70003843ab03342a10e96e-e805599761e92044bfb05456870afe47.js?1558096143"
         type="text/javascript"></script>
+

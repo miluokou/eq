@@ -1,133 +1,73 @@
+<?php
+$url = home_url();
+global $cat;
+$c = get_category($cat);
+$posts = get_posts("category=" . $c->term_id . "&order=ASC&numberposts=1000");
+//获取post的arg参数
+if (!empty($posts[0])) {
+    $args = get_metadata('post', $posts[0]->ID, $key, false);
+    if (!empty($args)) {
+        $urlInputWords = ['轮播图url1','轮播图url2','轮播图url3','轮播图url4'];
+        foreach ($urlInputWords as $urlInputWord) {
+            if(!empty($args[$urlInputWord])){
+                $lunbotuArr[]= emptyAdjustment($args[$urlInputWord]);
+            }
+        }
+    } else {
+        echo '这篇介绍没有设置头部大的图片,请联系管理员';
+        die;
+    }
+} else {
+    echo '这个分类下面没有写post页面,请联系编辑人员编写';
+    die;
+}
+$zTaxonomyImageUrl = z_taxonomy_image_url($c->term_id);
+if(!empty($zTaxonomyImageUrl)){
+    $headImageUrl = $zTaxonomyImageUrl;
+}
+
+?>
+
 <section class="Pageentry_Header_Slider" id="">
     <div class="main_home_slider has-autoplay">
-        <div class="home_slider_item">
-            <div class="home_slider ie_hide object_fit_image">
-                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
-                <picture>
-                    <source media="(min-width: 1440px)"
-                            data-srcset='/fileadmin/_processed_/d/c/csm_vertriebssachbearbeiter-2016_597d0a97ae.jpg'>
-                    <source media="(min-width: 1020px)"
-                            data-srcset='/fileadmin/_processed_/d/c/csm_vertriebssachbearbeiter-2016_a10472ece5.jpg'>
-                    <source media="(min-width: 768px)"
-                            data-srcset='/fileadmin/_processed_/d/c/csm_vertriebssachbearbeiter-2016_758ea4ac86.jpg'>
-                    <source data-srcset='/fileadmin/_processed_/d/c/csm_vertriebssachbearbeiter-2016_bd68bcd371.jpg'>
-                    <img data-src='/fileadmin/_processed_/d/c/csm_vertriebssachbearbeiter-2016_a10472ece5.jpg' alt="" style="width: 100%;"></source></source></source></source></picture>
-                <div class="image_top bottom_left">
-                    <picture><img data-src='/fileadmin/Home/Karriere/knoll-header-karriere.jpg'></picture>
+        <?php
+            foreach($lunbotuArr as $lunbotu){
+                echo '<div class="home_slider_item">'
+                ?>
+                <div class="home_slider ie_hide object_fit_image">
+                    <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
+                    <picture>
+                        <source media="(min-width: 1440px)"
+                                data-srcset='<?php echo $lunbotu;?>'>
+                        <source media="(min-width: 1020px)"
+                                data-srcset='<?php echo $lunbotu;?>'>
+                        <source media="(min-width: 768px)"
+                                data-srcset='<?php echo $lunbotu;?>'>
+                        <source data-srcset='<?php echo $lunbotu;?>'>
+                        <img data-src='<?php echo $lunbotu;?>' alt="" style="width: 100%;"></source></source></source></source></picture>
+                    <div class="image_top bottom_left">
+                        <picture><img data-src='<?php echo $lunbotu;?>'></picture>
+                    </div>
                 </div>
-            </div>
-            <div class="banner_bottom">
-                <div class="container">
-                    <div class="banner_bottom_slider">
-                        <div class="banner_slider_dv">
-                            <div class="banner_slider_text"><h1><!--TYPO3SEARCH_begin-->Karriere bei KNOLL
-                                    <!--TYPO3SEARCH_end--></h1>
-                                <div class="banner_link"><a href="stellenangebote\index.htm" class="hyphenate">Zu den
-                                        Stellenangeboten<i class="material-icons donthyphenate">arrow_forward</i></a></div>
+                <div class="banner_bottom">
+                    <div class="container">
+                        <div class="banner_bottom_slider">
+                            <div class="banner_slider_dv">
+                                <div class="banner_slider_text"><h1><!--TYPO3SEARCH_begin--><?php echo $c->name;?>
+                                        <!--TYPO3SEARCH_end--></h1>
+<!--                                    <div class="banner_link"><a href="stellenangebote\index.htm" class="hyphenate">Zu den-->
+<!--                                            Stellenangeboten<i class="material-icons donthyphenate">arrow_forward</i></a>-->
+<!--                                    </div>-->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="home_slider_item">
-            <div class="home_slider ie_hide object_fit_image">
-                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
-                <picture>
-                    <source media="(min-width: 1440px)"
-                            data-srcset='/fileadmin/_processed_/2/c/csm_knoll-farbgebung-2016-02_9a586233d4.jpg'>
-                    <source media="(min-width: 1020px)"
-                            data-srcset='/fileadmin/_processed_/2/c/csm_knoll-farbgebung-2016-02_07680c6327.jpg'>
-                    <source media="(min-width: 768px)"
-                            data-srcset='/fileadmin/_processed_/2/c/csm_knoll-farbgebung-2016-02_8a091ca16d.jpg'>
-                    <source data-srcset='/fileadmin/_processed_/2/c/csm_knoll-farbgebung-2016-02_1424fcb741.jpg'>
-                    <img data-src='/fileadmin/_processed_/2/c/csm_knoll-farbgebung-2016-02_07680c6327.jpg' alt=""
-                         style="width: 100%;"></source></source></source></source></picture>
-                <div class="image_top
-                                 bottom_left
-                                 ">
-                    <picture><img data-src='/fileadmin/Home/Karriere/knoll-header-wachstum.jpg'></picture>
-                </div>
-            </div>
-            <div class="banner_bottom">
-                <div class="container">
-                    <div class="banner_bottom_slider">
-                        <div class="banner_slider_dv">
-                            <div class="banner_slider_text"><h2><!--TYPO3SEARCH_begin-->Karriere bei KNOLL
-                                    <!--TYPO3SEARCH_end--></h2>
-                                <div class="banner_link"><a href="stellenangebote\index.htm" class="hyphenate">Zu den
-                                        Stellenangeboten<i class="material-icons donthyphenate">arrow_forward</i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="home_slider_item">
-            <div class="home_slider ie_hide object_fit_image">
-                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
-                <picture>
-                    <source media="(min-width: 1440px)"
-                            data-srcset='/fileadmin/_processed_/a/d/csm_vertriebsingenieur-2016_8e3ec36cfb.jpg'>
-                    <source media="(min-width: 1020px)"
-                            data-srcset='/fileadmin/_processed_/a/d/csm_vertriebsingenieur-2016_cd3f1dd3b2.jpg'>
-                    <source media="(min-width: 768px)"
-                            data-srcset='/fileadmin/_processed_/a/d/csm_vertriebsingenieur-2016_a2a3f1c276.jpg'>
-                    <source data-srcset='/fileadmin/_processed_/a/d/csm_vertriebsingenieur-2016_a6fe354966.jpg'>
-                    <img data-src='/fileadmin/_processed_/a/d/csm_vertriebsingenieur-2016_cd3f1dd3b2.jpg' alt=""
-                         style="width: 100%;"></source></source></source></source></picture>
-                <div class="image_top
-                                 top_right
-                                 ">
-                    <picture><img data-src='/fileadmin/Home/Karriere/knoll-header-international.jpg'></picture>
-                </div>
-            </div>
-            <div class="banner_bottom">
-                <div class="container">
-                    <div class="banner_bottom_slider">
-                        <div class="banner_slider_dv">
-                            <div class="banner_slider_text"><h2><!--TYPO3SEARCH_begin-->Karriere bei KNOLL
-                                    <!--TYPO3SEARCH_end--></h2>
-                                <div class="banner_link"><a href="stellenangebote\index.htm" class="hyphenate">Zu den
-                                        Stellenangeboten<i class="material-icons donthyphenate">arrow_forward</i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="home_slider_item">
-            <div class="home_slider ie_hide object_fit_image">
-                <!--div class="head_banner_image" style="background-image: url('images/banner_image1.jpg')"></div-->
-                <picture>
-                    <source media="(min-width: 1440px)"
-                            data-srcset='/fileadmin/_processed_/1/3/csm_personalsachbearbeiter-2016_8df069b09e.jpg'>
-                    <source media="(min-width: 1020px)"
-                            data-srcset='/fileadmin/_processed_/1/3/csm_personalsachbearbeiter-2016_252006162f.jpg'>
-                    <source media="(min-width: 768px)"
-                            data-srcset='/fileadmin/_processed_/1/3/csm_personalsachbearbeiter-2016_cdc6f10ba8.jpg'>
-                    <source data-srcset='/fileadmin/_processed_/1/3/csm_personalsachbearbeiter-2016_9c9c1f9263.jpg'>
-                    <img data-src='/fileadmin/_processed_/1/3/csm_personalsachbearbeiter-2016_252006162f.jpg' alt=""
-                         style="width: 100%;"></source></source></source></source></picture>
-                <div class="image_top
-                                 bottom_left
-                                 ">
-                    <picture><img data-src='/fileadmin/Home/Karriere/knoll-header-verantwortung.jpg'></picture>
-                </div>
-            </div>
-            <div class="banner_bottom">
-                <div class="container">
-                    <div class="banner_bottom_slider">
-                        <div class="banner_slider_dv">
-                            <div class="banner_slider_text"><h2><!--TYPO3SEARCH_begin-->Karriere bei KNOLL
-                                    <!--TYPO3SEARCH_end--></h2>
-                                <div class="banner_link"><a href="stellenangebote\index.htm" class="hyphenate">Zu den
-                                        Stellenangeboten<i class="material-icons donthyphenate">arrow_forward</i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+                echo '</div>';
+            }
+
+        ?>
+
     </div>
 </section>
