@@ -49,9 +49,7 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/level1/karriere/lv1KarriereHeadImages');
-//    echo $post->post_content;
-//    get_template_part('template-parts/common/downloadSection');
-//    get_template_part('template-parts/level1/karriere/lv1NeedJobSection');
+
     get_template_part('template-parts/level1/karriere/lv1KarriereRecruitList');
 }
 get_footer();

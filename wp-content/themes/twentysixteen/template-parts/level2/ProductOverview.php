@@ -4,6 +4,11 @@ $c = get_category($cat);
 
 $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hide_empty=0&hierarchical=1&optioncount=1&title_li=');
 
+//foreach ($currentSubclassess as $currentSubclasses){
+//    echo "<pre>";
+//    var_dump($currentSubclasses);
+//    die;
+
 ?>
 <section class="Headline_Copy_Image secdv background_grey remove_bottom_padding " id="">
     <div class="container">
@@ -286,3 +291,6 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
             <!-- ************** Mobile version ends ******** --></div>
     </div>
 </section>
+<?php
+//}
+?>
