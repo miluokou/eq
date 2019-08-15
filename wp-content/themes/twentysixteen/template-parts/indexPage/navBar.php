@@ -1,6 +1,6 @@
 <?php
 $getNavigationBar = getNavigationBar();
-$url=home_url();
+$url=site_url();
 ?>
 
 <div class="header_div">

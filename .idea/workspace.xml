@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/navBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/navBar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +203,7 @@
       <workItem from="1565447180110" duration="37374000" />
       <workItem from="1565538478886" duration="13820000" />
       <workItem from="1565738845350" duration="2106000" />
-      <workItem from="1565780085218" duration="3686000" />
+      <workItem from="1565780085218" duration="3881000" />
     </task>
     <servers />
   </component>
