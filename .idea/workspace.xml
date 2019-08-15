@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/123.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -205,7 +204,8 @@
       <workItem from="1565421304607" duration="10702000" />
       <workItem from="1565447180110" duration="37374000" />
       <workItem from="1565538478886" duration="13820000" />
-      <workItem from="1565738845350" duration="1506000" />
+      <workItem from="1565738845350" duration="2106000" />
+      <workItem from="1565780085218" duration="2853000" />
     </task>
     <servers />
   </component>

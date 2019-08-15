@@ -2,14 +2,26 @@
 global $cat;
 $c = get_category($cat);
 
+//Todo depth=2
 $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hide_empty=0&hierarchical=1&optioncount=1&title_li=');
 
-//foreach ($currentSubclassess as $currentSubclasses){
+foreach ($currentSubclasses as $currentSubclass){
+    //二级目录的集合的foreach
+
+    //获取二级目录的子分类的集合
+//    $SubclassificationScondaryCate = my_list_categories('child_of=' . $c->term_id . '&depth=1&hide_empty=0&hierarchical=1&optioncount=1&title_li=');
+//    $currentSubclass
+//    $level2
+    echo '<pre>';
+    var_dump(get_category($currentSubclass->term_id));
+    die;
+}
 //    echo "<pre>";
 //    var_dump($currentSubclasses);
 //    die;
 
 ?>
+
 <section class="Headline_Copy_Image secdv background_grey remove_bottom_padding " id="">
     <div class="container">
         <div class="row">
@@ -30,59 +42,87 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
         <div class="container">
             <div class="history_no_slider hist_desk">
                 <div class="row">
-                    <?php
-                        foreach ($currentSubclasses as $k =>$currentSub){
-                            ?>
-                            <div class="col-sm-3 col-xs-6 contbx">
-                                <a href="<?php echo get_category_link($currentSub->term_id)?>" class="manage_div_content_boxes_greybg">
-                                    <div class="image_div smlbx">
-                                        <picture>
-                                            <source media="(min-width: 1200px)" data-srcset='<?php echo z_taxonomy_image_url($currentSub->term_id);?>'>
-                                            <source media="(min-width: 992px)" data-srcset='<?php echo z_taxonomy_image_url($currentSub->term_id);?>'>
-                                            <source media="(min-width: 768px)" data-srcset='<?php echo z_taxonomy_image_url($currentSub->term_id);?> '>
-                                            <source media="(min-width: 480px)" data-srcset='<?php echo z_taxonomy_image_url($currentSub->term_id);?>'>
-                                            <source media="(max-width: 479px)" data-srcset='<?php echo z_taxonomy_image_url($currentSub->term_id);?>'>
-                                            <img data-src='<?php echo z_taxonomy_image_url($currentSub->term_id);?>' alt="Druckerhöhungsanlagen - KNOLL Maschinenbau GmbH"></source>
-                                            </source>
-                                            </source>
-                                            </source>
-                                            </source>
-                                        </picture>
-                                    </div>
-                                    <div class="manage_desc">
-                                        <!-- small box -->
-                                        <div class="heading_1"></div>
-                                        <div class="para_1 rte_atag">
-                                            <p><?php echo $currentSub->description;?></p>
-                                        </div>
-                                        <div class="comman_para_link">
-                        <span>了解更多
-                          <i class="material-icons">arrow_forward</i></span>
-                                        </div>
-                                    </div>
-                                    <div class="text_container">
-                                        <!-- small box -->
-                                        <div class="heading_1 hyphenate">
-                                            <p><?php echo $currentSub->name;?></p>
-                                        </div>
-                                        <div class="comman_para_link">
-                        <span>了解更多
-                          <i class="material-icons">arrow_forward</i></span>
-                                        </div>
-                                    </div>
-                                </a>
+                    <div class="col-sm-3 col-xs-6 contbxmob">
+                        <a href="hochdruckanlagen\index.htm" class="manage_div_content_boxes_greybg">
+                            <div class="image_div smlbx">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_b17c91b563.jpg '>
+                                    <source media="(min-width: 992px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_37a5b41f86.jpg '>
+                                    <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_5e98adb05f.jpg '>
+                                    <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_b17c91b563.jpg '>
+                                    <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_37a5b41f86.jpg '>
+                                    <img data-src='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_b17c91b563.jpg' alt="Druckerhöhungsanlagen - KNOLL Maschinenbau GmbH"></source>
+                                    </source>
+                                    </source>
+                                    </source>
+                                    </source>
+                                </picture>
                             </div>
-                            <?php
-                            $y = $k+1;
-                            if($y%4==0){
-                               echo ' </div><div class="row">';
-                            }
-                        }
-                        $shifoubeisizhengchu = count($currentSubclasses)+1;
-                        if($shifoubeisizhengchu%4==0){
-                            echo '</div>';
-                        }
-                    ?>
+                            <div class="manage_desc">
+                                <!-- small box -->
+                                <div class="heading_1"></div>
+                                <div class="para_1 rte_atag">
+                                    <p>KNOLL Hochdruckanlagen dienen zur Versorgung von Werkzeugmaschinen wie Bearbeitungszentren und Drehautomaten. Für den richtigen Vorlaufdruck an den verschiedenen Verbrauchern sorgen dabei Hochdruckpumpen.</p>
+                                </div>
+                                <div class="comman_para_link">
+                        <span>Mehr anzeigen
+                          <i class="material-icons">arrow_forward</i></span>
+                                </div>
+                            </div>
+                            <div class="text_container">
+                                <!-- small box -->
+                                <div class="heading_1 hyphenate">
+                                    <p>Hochdruckanlagen</p>
+                                </div>
+                                <div class="comman_para_link">
+                        <span>Mehr anzeigen
+                          <i class="material-icons">arrow_forward</i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 contbxmob">
+                        <a href="filteranlagen\index.htm" class="manage_div_content_boxes_greybg">
+                            <div class="image_div smlbx">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_47016ce23e.jpg '>
+                                    <source media="(min-width: 992px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_da91165bfd.jpg '>
+                                    <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_3f1ba37690.jpg '>
+                                    <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_47016ce23e.jpg '>
+                                    <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_da91165bfd.jpg '>
+                                    <img data-src='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_47016ce23e.jpg' alt="Standardfilter KF - KNOLL Maschinenbau GmbH"></source>
+                                    </source>
+                                    </source>
+                                    </source>
+                                    </source>
+                                </picture>
+                            </div>
+                            <div class="manage_desc">
+                                <!-- small box -->
+                                <div class="heading_1"></div>
+                                <div class="para_1 rte_atag">
+                                    <p>KSS-Filter von KNOLL reinigen Kühlschmierstoffe bis in den hochfeinen Bereich, auch ohne Filterverbrauchsstoffe. Die KSS-Filter arbeiten dabei lokal für Einzelmaschinen sowie zentral für Maschinengruppen oder komplette Fertigungsbereiche.</p>
+                                </div>
+                                <div class="comman_para_link">
+                        <span>Mehr anzeigen
+                          <i class="material-icons">arrow_forward</i></span>
+                                </div>
+                            </div>
+                            <div class="text_container">
+                                <!-- small box -->
+                                <div class="heading_1 hyphenate">
+                                    <p>Filteranlagen</p>
+                                </div>
+                                <div class="comman_para_link">
+                        <span>Mehr anzeigen
+                          <i class="material-icons">arrow_forward</i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
             <!-- ******************* Mobile version ********************************* -->
             <div class="history_no_slider hist_mob">

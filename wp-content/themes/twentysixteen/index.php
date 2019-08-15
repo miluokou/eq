@@ -1,10 +1,8 @@
 <?php
 get_header();
 $catesLv1 = get_parent0();
-$serverName = 'http://eq.miluokou.com';
-if($_SERVER['HTTP_HOST'] =='localhost'){
-    $serverName = 'http://localhost/wordpress';
-}
+
+$serverName = site_url();
 $houzhui = get_houzhui();
 if($houzhui == '_zh'){
     $newsCateId = get_cat_ID('新闻');
