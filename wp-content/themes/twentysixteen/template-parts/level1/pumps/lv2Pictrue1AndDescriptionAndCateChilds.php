@@ -39,24 +39,24 @@ foreach ($nextLevelCates as $fatherCateId=>$nextLevelCate){
                             <div class="custom-slides">
                                 <?php
                                 foreach ($nextLevelCate as $nextLevelCateInfo) {?>
-                                <div class="col-sm-6 col-xs-12 contbx">
+                                <div class="col-sm-3 col-xs-12 contbx">
                                     <a
                                             href="<?php echo get_category_link($nextLevelCateInfo->term_id);?>"
                                             class="manage_div_content_boxes">
                                         <div class="image_div
-                                                         bigbx">
+                                                         smlbx">
                                             <picture>
                                                 <source media="(min-width: 1200px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?> '>
+                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?> '>
                                                 <source media="(min-width: 992px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?>  '>
+                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?>  '>
                                                 <source media="(min-width: 768px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?>  '>
+                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?>  '>
                                                 <source media="(min-width: 480px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?>  '>
+                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?>  '>
                                                 <source media="(max-width: 479px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?> '>
-                                                <img data-src='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?> '
+                                                        data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?> '>
+                                                <img data-src='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?> '
                                                      alt="Mitarbeiter montieren Zentrale Filteranlage mit Pumptechnik - KNOLL Maschinenbau GmbH"></source></source></source></source></source>
                                             </picture>
                                         </div>
@@ -87,7 +87,7 @@ foreach ($nextLevelCates as $fatherCateId=>$nextLevelCate){
                                         href="<?php echo get_category_link($nextLevelCateInfo->term_id);?>"
                                         class="manage_div_content_boxes">
                                     <div class="image_div
-                                                         bigbx">
+                                                         smlbx">
                                         <picture>
                                             <source media="(min-width: 1200px)"
                                                     data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?> '>

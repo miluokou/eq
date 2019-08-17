@@ -1,4 +1,5 @@
 <?php
+
 $url = home_url();
 global $cat;
 $c = get_category($cat);
@@ -15,9 +16,8 @@ if (!empty($posts[0])) {
     $lunbo2 = emptyAdjustment($args['公司介绍页的轮播图的url2']);
 } else {
     echo $c->name . '页面还没编写,请联系编辑人员在这个分类下面编写一篇文章';
-    die;
+//    die;
 }
-
 
 ?>
 
@@ -56,6 +56,27 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');
     get_template_part('template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds');
+}else if($c->name == "单一系统"){
+    get_template_part('template-parts/indexPage/navBar');
+    get_template_part('template-parts/indexPage/rightIconList');
+    get_template_part('template-parts/common/headCateImageSection');
+    get_template_part('template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds');
+
+}else if($c->name == "联系我们"){
+    get_template_part('template-parts/indexPage/navBar');
+    get_template_part('template-parts/indexPage/rightIconList');
+    get_template_part('template-parts/common/headCateImageSection');
+    echo $posts[0]->post_content;
+}else if($c->name == "新闻"){
+    get_template_part('template-parts/indexPage/navBar');
+    get_template_part('template-parts/indexPage/rightIconList');
+    get_template_part('template-parts/common/headCateImageSection');
+    get_template_part( 'template-parts/indexPage/newsAndDate');
+}else if($c->name == "泵"){
+    get_template_part('template-parts/indexPage/navBar');
+    get_template_part('template-parts/indexPage/rightIconList');
+    get_template_part('template-parts/common/headCateImageSection');
+    get_template_part('template-parts/level1/pumps/lv2Pictrue1AndDescriptionAndCateChilds');
 }
 get_footer();
 ?>
