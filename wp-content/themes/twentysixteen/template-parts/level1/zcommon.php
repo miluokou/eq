@@ -49,9 +49,13 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/level1/karriere/lv1KarriereHeadImages');
-
     get_template_part('template-parts/level1/karriere/lv1KarriereRecruitList');
     get_template_part( 'template-parts/indexPage/newsAndDate');
+}else if($c->name == "中央系统"){
+    get_template_part('template-parts/indexPage/navBar');
+    get_template_part('template-parts/indexPage/rightIconList');
+    get_template_part('template-parts/common/headCateImageSection');
+    get_template_part('template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds');
 }
 get_footer();
 ?>

@@ -3,7 +3,6 @@ global $cat;
 $c = get_category($cat);
 
 //Todo depth=
-$locations = get_theme_mod( 'nav_menu_locations' );
 $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hide_empty=0&hierarchical=1&optioncount=1&title_li=');
 
 foreach ($currentSubclasses as $currentSubclass){

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/OldProductOverview.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/newsAndDate.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/newsAndDate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/central-systems/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/en/central-systems/index.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/common/headCateImageSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/common/headCateImageSection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/zcommon.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +43,10 @@
   <component name="ProjectId" id="1PDv4muXQCzPNGBAlCamko1ADUb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress-5.0.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -48,17 +54,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\karriere" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\common" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\indexPage" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\css" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\company" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\secondaryPage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level2" />
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\karriere" />
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\common" />
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\indexPage" />
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -208,7 +214,7 @@
       <workItem from="1565738845350" duration="2106000" />
       <workItem from="1565780085218" duration="21100000" />
       <workItem from="1566014246322" duration="365000" />
-      <workItem from="1566015447342" duration="419000" />
+      <workItem from="1566015447342" duration="9913000" />
     </task>
     <servers />
   </component>

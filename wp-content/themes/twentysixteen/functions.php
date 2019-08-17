@@ -1248,36 +1248,24 @@ function get_post_info_byname($name)
     );
 }
 
-function c7sky_get_nav_menu_tree($location) {
-    $locations = get_nav_menu_locations();
-    echo '<pre>';
-    var_dump($locations);
-    die;
-    $menu_id = $locations[$location] ;
-    $menu_object = wp_get_nav_menu_object($menu_id);
-    $menu_items = wp_get_nav_menu_items($menu_object->term_id);
 
-    _wp_menu_item_classes_by_context($menu_items);
+function getNextLevelChildInfo($nextLevel =2 ){
+    global $cat;
+    $c = get_category($cat);
 
-    $menu = array();
-    $submenus = array();
+//Todo depth=
+    $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hide_empty=0&hierarchical=1&optioncount=1&title_li=');
 
-    foreach ($menu_items as $m) {
-        $m->children = array();
+    foreach ($currentSubclasses as $currentSubclass){
 
-        if (!$m->menu_item_parent) {
-            $menu[$m->ID] = $m;
-        } else {
-            $submenus[$m->ID] = $m;
-
-            if (isset($menu[$m->menu_item_parent])) {
-                $menu[$m->menu_item_parent]->children[$m->ID] = &$submenus[$m->ID];
-            } else {
-                $submenus[$m->menu_item_parent]->children[$m->ID] = $submenus[$m->ID];
-            }
+        if(get_level_pro($currentSubclass->term_id) ==$nextLevel){
+            $threeAndFourInfo[$currentSubclass->parent][$currentSubclass->term_id] = $currentSubclass;
         }
     }
-
-    return $menu;
+    if(empty($threeAndFourInfo)){
+        echo '该分类下没有子分类，你得编辑编辑子分类的信息';
+        die;
+    }
+    return $threeAndFourInfo;
 }
 add_filter('widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args');
