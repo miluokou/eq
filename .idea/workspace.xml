@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/pumps/lv2Pictrue1AndDescriptionAndCateChilds.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/lv1HistorySection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/lv1ManagementCommittee.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/lv2Pictrue1AndDescriptionAndCateChilds.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/vl1CertificateSection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/contact/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/en/contact/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/pumps/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/en/pumps/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/pumps/screw-pump-kts/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/en/pumps/screw-pump-kts/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/transport-systems/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/en/transport-systems/index.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/pumps" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -53,11 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\transforSystem" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\pumps" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level2" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\karriere" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\common" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\indexPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\company" />
@@ -214,7 +214,7 @@
       <workItem from="1566014246322" duration="365000" />
       <workItem from="1566015447342" duration="10512000" />
       <workItem from="1566031774355" duration="1001000" />
-      <workItem from="1566038338086" duration="7100000" />
+      <workItem from="1566038338086" duration="12280000" />
     </task>
     <servers />
   </component>

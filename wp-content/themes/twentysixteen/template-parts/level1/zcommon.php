@@ -3,7 +3,7 @@
 $url = home_url();
 global $cat;
 $c = get_category($cat);
-$posts = get_posts("category=" . $c->term_id . "&order=ASC&numberposts=1000");
+$posts = get_posts("category=" . $c->term_id . "&order=DESC&numberposts=1000");
 
 //获取post的arg参数
 if (!empty($posts[0])) {
@@ -41,7 +41,7 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');
-    get_template_part('template-parts/common/post0TitleAndDescription');
+//    get_template_part('template-parts/common/post0TitleAndDescription');
     echo $post->post_content;
     get_template_part('template-parts/common/downloadSection');
 }else if($c->name == "事业"){
@@ -77,6 +77,12 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');
     get_template_part('template-parts/level1/pumps/lv2Pictrue1AndDescriptionAndCateChilds');
+}else if($c->name == "运输系统"){
+    get_template_part('template-parts/indexPage/navBar');
+    get_template_part('template-parts/indexPage/rightIconList');
+    get_template_part('template-parts/common/headCateImageSection');
+    echo $posts[0]->post_content;
+    get_template_part('template-parts/common/downloadSection');
 }
 get_footer();
 ?>
