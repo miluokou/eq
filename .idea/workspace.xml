@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/navBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/navBar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karriere/ausbildung/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/karriere/ausbildung/index.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/karriere" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress-5.0.4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -203,7 +206,8 @@
       <workItem from="1565447180110" duration="37374000" />
       <workItem from="1565538478886" duration="13820000" />
       <workItem from="1565738845350" duration="2106000" />
-      <workItem from="1565780085218" duration="3881000" />
+      <workItem from="1565780085218" duration="21100000" />
+      <workItem from="1566014246322" duration="365000" />
     </task>
     <servers />
   </component>

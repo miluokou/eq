@@ -1248,4 +1248,36 @@ function get_post_info_byname($name)
     );
 }
 
+function c7sky_get_nav_menu_tree($location) {
+    $locations = get_nav_menu_locations();
+    echo '<pre>';
+    var_dump($locations);
+    die;
+    $menu_id = $locations[$location] ;
+    $menu_object = wp_get_nav_menu_object($menu_id);
+    $menu_items = wp_get_nav_menu_items($menu_object->term_id);
+
+    _wp_menu_item_classes_by_context($menu_items);
+
+    $menu = array();
+    $submenus = array();
+
+    foreach ($menu_items as $m) {
+        $m->children = array();
+
+        if (!$m->menu_item_parent) {
+            $menu[$m->ID] = $m;
+        } else {
+            $submenus[$m->ID] = $m;
+
+            if (isset($menu[$m->menu_item_parent])) {
+                $menu[$m->menu_item_parent]->children[$m->ID] = &$submenus[$m->ID];
+            } else {
+                $submenus[$m->menu_item_parent]->children[$m->ID] = $submenus[$m->ID];
+            }
+        }
+    }
+
+    return $menu;
+}
 add_filter('widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args');
