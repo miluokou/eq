@@ -20,7 +20,7 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
                 <!--contacts_headline-->
                 <!--contacts_headline-->
                 <div class="comman_para_link">
-                    <a href="aktuelles\index.htm">对更多感兴趣？
+                    <a href="<?php echo get_category_link($newsCateId);?>">对更多感兴趣？
                         <i class="material-icons">arrow_forward</i></a>
                 </div>
             </div>

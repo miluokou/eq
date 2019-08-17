@@ -51,6 +51,7 @@ if($c->name == "公司"){
     get_template_part('template-parts/level1/karriere/lv1KarriereHeadImages');
 
     get_template_part('template-parts/level1/karriere/lv1KarriereRecruitList');
+    get_template_part( 'template-parts/indexPage/newsAndDate');
 }
 get_footer();
 ?>

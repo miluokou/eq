@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karriere/ausbildung/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/karriere/ausbildung/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/ProductOverview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/newsAndDate.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/newsAndDate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,6 +208,7 @@
       <workItem from="1565738845350" duration="2106000" />
       <workItem from="1565780085218" duration="21100000" />
       <workItem from="1566014246322" duration="365000" />
+      <workItem from="1566015447342" duration="419000" />
     </task>
     <servers />
   </component>

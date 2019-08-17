@@ -5,12 +5,12 @@ $catesLv1 = get_parent0();
 $serverName = site_url();
 $houzhui = get_houzhui();
 if($houzhui == '_zh'){
-    $newsCateId = get_cat_ID('新闻');
+//    $newsCateId = get_cat_ID('新闻');
     $componyId = get_cat_ID('公司');
 }
-$posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
+//$posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
 
-$newsLink = get_category_link($newsCateId);
+//$newsLink = get_category_link($newsCateId);
 $componyLink = get_category_link($componyId);
 $catesLv1 = get_parent0();
 $banner = show_banners();
