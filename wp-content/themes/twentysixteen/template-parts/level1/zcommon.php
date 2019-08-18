@@ -1,6 +1,6 @@
 <?php
 
-$url = home_url();
+
 global $cat;
 $c = get_category($cat);
 $posts = get_posts("category=" . $c->term_id . "&order=DESC&numberposts=1000");

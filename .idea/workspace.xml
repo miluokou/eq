@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/rightIconList.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/rightIconList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-load.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-load.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/commonHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/commonHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,17 +48,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\company" />
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts" />
+      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\secondaryPage" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\transforSystem" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\pumps" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level2" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\karriere" />
       <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\common" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts\level1\company" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\template-parts" />
-      <recent name="D:\xampp\htdocs\wordpress\wp-content\themes\twentysixteen\secondaryPage" />
     </key>
   </component>
   <component name="RunDashboard">

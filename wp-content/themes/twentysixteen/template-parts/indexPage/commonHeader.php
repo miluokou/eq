@@ -1,5 +1,5 @@
 <?php
-$url=home_url();
+$url=site_url();
 ?>
 
 <head>
