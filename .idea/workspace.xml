@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/lv1HistorySection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/lv1ManagementCommittee.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/lv2Pictrue1AndDescriptionAndCateChilds.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/transforSystem/vl1CertificateSection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/transport-systems/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/en/transport-systems/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/rightIconList.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/indexPage/rightIconList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-load.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-load.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-mail.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +211,7 @@
       <workItem from="1566014246322" duration="365000" />
       <workItem from="1566015447342" duration="10512000" />
       <workItem from="1566031774355" duration="1001000" />
-      <workItem from="1566038338086" duration="12280000" />
+      <workItem from="1566038338086" duration="13677000" />
     </task>
     <servers />
   </component>
