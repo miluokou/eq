@@ -28,7 +28,7 @@ if (!empty($posts[0])) {
 get_template_part('template-parts/indexPage/navBar');
 get_template_part('template-parts/indexPage/rightIconList');
 get_template_part('template-parts/common/headCateImageSection');
-get_template_part('template-parts/level3/lv3NoUseSection');
+//get_template_part('template-parts/level3/lv3NoUseSection');
 echo $posts[0]->post_content;
 get_template_part('template-parts/common/downloadSection');
 get_footer();
