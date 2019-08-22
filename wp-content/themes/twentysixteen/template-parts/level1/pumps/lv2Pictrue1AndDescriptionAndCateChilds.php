@@ -22,7 +22,7 @@ foreach ($nextLevelCates as $fatherCateId=>$nextLevelCate){
                             <picture>
                                 <!--source media="(min-width: 1024px)" srcset="/fileadmin/_processed_/8/8/csm_knoll-zentralsysteme-svg-ausschnitt-systeme-mit-pumptechnik_d50e69deeb.jpg"><source media="(min-width: 768px)" srcset="/fileadmin/_processed_/8/8/csm_knoll-zentralsysteme-svg-ausschnitt-systeme-mit-pumptechnik_370a4fc4ee.jpg"--><img
                                         data-src="<?php echo z_taxonomy_image_url($fatherCate->term_id); ?>"
-                                        alt="Systeme mit Pumptechnik - KNOLL Maschinenbau GmbH"></picture>
+                                        alt="Systeme mit Pumptechnik - HYDROFOS Maschinenbau GmbH"></picture>
                             <!--img src='/fileadmin/Home/Zentralsysteme/knoll-zentralsysteme-svg-ausschnitt-systeme-mit-pumptechnik.jpg' class='img-responsive' /-->
                         </div>
                     </div>
@@ -57,7 +57,7 @@ foreach ($nextLevelCates as $fatherCateId=>$nextLevelCate){
                                                 <source media="(max-width: 479px)"
                                                         data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?> '>
                                                 <img data-src='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id,'thumbnail'); ?> '
-                                                     alt="Mitarbeiter montieren Zentrale Filteranlage mit Pumptechnik - KNOLL Maschinenbau GmbH"></source></source></source></source></source>
+                                                     alt="Mitarbeiter montieren Zentrale Filteranlage mit Pumptechnik - HYDROFOS Maschinenbau GmbH"></source></source></source></source></source>
                                             </picture>
                                         </div>
                                         <div class="text_container"><!-- small box -->
@@ -100,7 +100,7 @@ foreach ($nextLevelCates as $fatherCateId=>$nextLevelCate){
                                             <source media="(max-width: 479px)"
                                                     data-srcset='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?> '>
                                             <img data-src='<?php echo z_taxonomy_image_url($nextLevelCateInfo->term_id); ?> '
-                                                 alt="Mitarbeiter montieren Zentrale Filteranlage mit Pumptechnik - KNOLL Maschinenbau GmbH"></source></source></source></source></source>
+                                                 alt="Mitarbeiter montieren Zentrale Filteranlage mit Pumptechnik - HYDROFOS Maschinenbau GmbH"></source></source></source></source></source>
                                         </picture>
                                     </div>
                                     <div class="text_container"><!-- small box -->

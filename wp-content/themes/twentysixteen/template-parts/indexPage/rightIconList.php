@@ -79,7 +79,7 @@
 <div class="overlay main_overlay hide" id="mainOverlay"></div>
 <div class="contact_header_module hide">
     <address class="common_para rte_atag">
-        <p>KNOLL Maschinenbau GmbH
+        <p>HYDROFOS Maschinenbau GmbH
             <br>Schwarzachstraße 20
             <br>D-88348 Bad Saulgau</p></address>
     <div class="kontakt_no">
@@ -101,7 +101,7 @@
             <a href="javascript:linkTo_UnCryptMailto('ocknvq,kphq0kvyqtmuBmpqnn\/od0fg');">info.itworks(at)knoll-mb.de</a></div>
     </div>
     <div class="link_text common_para">
-        <a href='unternehmen\knoll-weltweit\index.htm'>KNOLL weltweit
+        <a href='unternehmen\knoll-weltweit\index.htm'>HYDROFOS weltweit
             <i class="material-icons">arrow_forward</i></a>
     </div>
 </div>

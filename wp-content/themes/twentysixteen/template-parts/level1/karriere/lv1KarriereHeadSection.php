@@ -10,7 +10,7 @@
     <link rel="alternate" href="index.htm" hreflang="de">
     <link rel="alternate" href="..\en\careers\index.htm" hreflang="en">
     <meta name="generator" content="TYPO3 CMS">
-    <title>Karriere - KNOLL Maschinenbau GmbH</title>
+    <title>Karriere - HYDROFOS Maschinenbau GmbH</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="index,follow">
     <link rel="apple-touch-icon" sizes="180x180"

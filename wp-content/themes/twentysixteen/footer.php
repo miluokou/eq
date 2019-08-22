@@ -15,9 +15,9 @@ $getNavigationBar = getNavigationBar();
                             </h4>
                             <ul>
                                 <li class="menu_sub">
-                                    <!--<a href="/unternehmen/knoll-weltweit/">KNOLL weltweit</a>-->
-                                    <a class="hyphenate" title="KNOLL weltweit"
-                                       href="unternehmen\knoll-weltweit\index.htm">KNOLL weltweit</a></li>
+                                    <!--<a href="/unternehmen/knoll-weltweit/">HYDROFOS weltweit</a>-->
+                                    <a class="hyphenate" title="HYDROFOS weltweit"
+                                       href="unternehmen\knoll-weltweit\index.htm">HYDROFOS weltweit</a></li>
                                 <li class="menu_sub">
                                     <!--<a href="/unternehmen/#geschaeftsleitung">Geschäftsleitung</a>-->
                                     <a class="hyphenate" title="Geschäftsleitung"
@@ -220,7 +220,7 @@ $getNavigationBar = getNavigationBar();
                                         foreach ($lv1title['child'] as $lv2term_id => $lv2title) {
                                             ?>
                                             <li class="menu_sub">
-                                                <!--<a href="/unternehmen/knoll-weltweit/">KNOLL weltweit</a>-->
+                                                <!--<a href="/unternehmen/knoll-weltweit/">HYDROFOS weltweit</a>-->
                                                 <a class="hyphenate" title="<?php echo $lv2title['name']; ?>"
                                                    href="<?php echo get_category_link($lv2term_id); ?>"><?php echo $lv2title['name']; ?></a>
                                             </li>
@@ -290,7 +290,7 @@ $getNavigationBar = getNavigationBar();
                 <div class="col-md-3 text-right">
                     <div class="copyright">
                         <i class="fa fa-copyright" aria-hidden="true"></i>
-                        <p>KNOLL Maschinenbau GmbH
+                        <p>HYDROFOS Maschinenbau GmbH
                         <p></div>
                 </div>
             </div>

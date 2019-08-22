@@ -8,12 +8,12 @@ $url=site_url();
     <link hreflang="en" rel="alternate" href="index.htm">
     <link hreflang="x-default" rel="alternate" href="<?php echo $url;?>\einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm">
     <link rel="canonical" href="index.htm">
-    <meta name="description" content="KNOLL Maschinenbau GmbH Schwarzachstraße 20 D-88348 Bad Saulgauphone+49 7581 2008-91168print+49 7581 2008-90140emaileinzelanlagen.itworks(at)knoll-mb.deKNOLL...">
+    <meta name="description" content="HYDROFOS Maschinenbau GmbH Schwarzachstraße 20 D-88348 Bad Saulgauphone+49 7581 2008-91168print+49 7581 2008-90140emaileinzelanlagen.itworks(at)knoll-mb.deKNOLL...">
     <link rel="alternate" href="<?php echo $url;?>\einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm" hreflang="x-default">
     <link rel="alternate" href="<?php echo $url;?>\einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm" hreflang="de">
     <link rel="alternate" href="index.htm" hreflang="en">
     <meta name="generator" content="TYPO3 CMS">
-    <title>Single systems - High pressure units - High pressure unit LubiCool® - KNOLL Maschinenbau GmbH</title>
+    <title>Single systems - High pressure units - High pressure unit LubiCool® - HYDROFOS Maschinenbau GmbH</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="index,follow ">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url;?>\fileadmin\knoll\Resources\Public\images\Favicons\appletouchicon180x180.png">

@@ -44,7 +44,7 @@ $lishi = get_category(get_cat_ID('事业'));
                                             <source media="(max-width: 479px)"
                                                     data-srcset='<?php echo $lishijieshaotupian; ?>'>
                                             <img data-src='<?php echo $lishijieshaotupian; ?>'
-                                                 alt="nnovation Kratzbandförderer - KNOLL Maschinenbau GmbH"></source>
+                                                 alt="nnovation Kratzbandförderer - HYDROFOS Maschinenbau GmbH"></source>
                                             </source>
                                             </source>
                                             </source>
@@ -107,7 +107,7 @@ $lishi = get_category(get_cat_ID('事业'));
                                             <source media="(max-width: 479px)"
                                                     data-srcset='<?php echo $lishijieshaotupian; ?>'>
                                             <img data-src='<?php echo $lishijieshaotupian; ?>'
-                                                 alt="Walter Knoll, Firmengründer 2012  - KNOLL Maschinenbau GmbH"></source>
+                                                 alt="Walter Knoll, Firmengründer 2012  - HYDROFOS Maschinenbau GmbH"></source>
                                             </source>
                                             </source>
                                             </source>

@@ -90,7 +90,7 @@
 <a id="c4671"></a>
 <div class="contact_header_module hide">
     <address class="common_para rte_atag">
-        <p>KNOLL Maschinenbau GmbH
+        <p>HYDROFOS Maschinenbau GmbH
             <br>Schwarzachstraße 20
             <br>D-88348 Bad Saulgau</p></address>
     <div class="kontakt_no">
