@@ -7,7 +7,7 @@ $url=site_url();
 <nav class="navbar">
     <div class="navbar-header">
         <a class="navbar-brand-logo" href="<?php echo $url; ?>\">
-            <img src="<?php echo $url; ?>\fileadmin\knoll\Resources\Public\images\KNOLL-Logo_4c.svg" alt="" class="img-responsive"></a>
+            <img src="<?php echo $url; ?>\fileadmin\knoll\Resources\Public\images\logo.png" alt="" class="img-responsive"></a>
         <button type="button" class="navbar-toggle" data-target="#myNavbar" id="myBtnNavbar" aria-expanded="false">
             <span class="icon-bar bar1"></span>
             <span class="icon-bar bar2"></span>

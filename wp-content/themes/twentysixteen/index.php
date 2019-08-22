@@ -102,7 +102,7 @@ $banner = show_banners();
 <div class="overlay main_overlay hide" id="mainOverlay"></div>
 <div class="contact_header_module hide">
     <address class="common_para rte_atag">
-        <p>KNOLL Maschinenbau GmbH
+        <p>HYDROFOS Maschinenbau GmbH
             <br>Schwarzachstraße 20
             <br>D-88348 Bad Saulgau</p></address>
     <div class="kontakt_no">
@@ -124,7 +124,7 @@ $banner = show_banners();
             <a href="javascript:linkTo_UnCryptMailto('ocknvq,kphq0kvyqtmuBmpqnn\/od0fg');">info.itworks(at)knoll-mb.de</a></div>
     </div>
     <div class="link_text common_para">
-        <a href='unternehmen\knoll-weltweit\index.htm'>KNOLL weltweit
+        <a href='unternehmen\knoll-weltweit\index.htm'>HYDROFOS weltweit
             <i class="material-icons">arrow_forward</i></a>
     </div>
 </div>
@@ -151,7 +151,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
             <div class="col-sm-6">
                 <div class='right_image'>
                     <picture>
-                        <img data-src="<?php echo $serverName;?>/wp-content/uploads/2019/07/right_image.jpg" alt="Einblick in die Blechbearbeitung der KNOLL Maschinenbau GmbH"></picture>
+                        <img data-src="<?php echo $serverName;?>/wp-content/uploads/2019/07/right_image.jpg" alt="Einblick in die Blechbearbeitung der HYDROFOS Maschinenbau GmbH"></picture>
                     <div class="headline_copy_image_variation_1">
                         <div class="overlay-with-text">
                             <div class="inner-dv">
@@ -198,7 +198,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                                                 <source media="(min-width: 768px)" data-srcset='<?php  echo $cateLv1->description;?>'>
                                                 <source media="(min-width: 480px)" data-srcset='<?php  echo $cateLv1->description;?>'>
                                                 <source media="(max-width: 479px)" data-srcset='<?php  echo $cateLv1->description;?>'>
-                                                <img data-src='<?php  echo $cateLv1->description;?>' alt="Kompaktfilter KF - KNOLL Maschinenbau GmbH"></source>
+                                                <img data-src='<?php  echo $cateLv1->description;?>' alt="Kompaktfilter KF - HYDROFOS Maschinenbau GmbH"></source>
                                                 </source>
                                                 </source>
                                                 </source>
@@ -240,7 +240,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/7/f/csm_knoll-kompaktfilter-kf-301x301-01_dc4f1650c6.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/7/f/csm_knoll-kompaktfilter-kf-301x301-01_3f22f30d66.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/7/f/csm_knoll-kompaktfilter-kf-301x301-01_b7e4f4c27a.jpg '>
-                                        <img data-src='/fileadmin/_processed_/7/f/csm_knoll-kompaktfilter-kf-301x301-01_3f22f30d66.jpg' alt="Kompaktfilter KF - KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/7/f/csm_knoll-kompaktfilter-kf-301x301-01_3f22f30d66.jpg' alt="Kompaktfilter KF - HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -270,7 +270,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/f/7/csm_knoll-zentralsysteme-301x301-01_478bdd30d9.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/f/7/csm_knoll-zentralsysteme-301x301-01_4e887329e0.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/f/7/csm_knoll-zentralsysteme-301x301-01_ca1be659df.jpg '>
-                                        <img data-src='/fileadmin/_processed_/f/7/csm_knoll-zentralsysteme-301x301-01_4e887329e0.jpg' alt="Zentralsystem der KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/f/7/csm_knoll-zentralsysteme-301x301-01_4e887329e0.jpg' alt="Zentralsystem der HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -302,7 +302,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/7/3/csm_knoll-transportsystem-ts-301x301-02_dd9c0fd579.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/7/3/csm_knoll-transportsystem-ts-301x301-02_5663ffd6b4.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/7/3/csm_knoll-transportsystem-ts-301x301-02_d2bab4eb0e.jpg '>
-                                        <img data-src='/fileadmin/_processed_/7/3/csm_knoll-transportsystem-ts-301x301-02_5663ffd6b4.jpg' alt="Transportsystem TS – KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/7/3/csm_knoll-transportsystem-ts-301x301-02_5663ffd6b4.jpg' alt="Transportsystem TS – HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -419,7 +419,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                         <source media="(min-width: 768px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
                         <source media="(min-width: 480px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
                         <source media="(max-width: 479px)" data-srcset="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg">
-                        <img data-src="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg" alt="Mitarbeiterin an der Service-Hotline - KNOLL Maschinenbau GmbH" style="width: 100%;"></source>
+                        <img data-src="<?php echo $serverName;?>/wp-content/uploads/2019/07/service.jpg" alt="Mitarbeiterin an der Service-Hotline - HYDROFOS Maschinenbau GmbH" style="width: 100%;"></source>
                         </source>
                         </source>
                         </source>

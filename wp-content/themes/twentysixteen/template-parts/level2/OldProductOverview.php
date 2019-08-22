@@ -35,7 +35,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                         <source media="(min-width: 768px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?> '>
                                         <source media="(min-width: 480px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>'>
                                         <source media="(max-width: 479px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>'>
-                                        <img data-src='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>' alt="Druckerhöhungsanlagen - KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>' alt="Druckerhöhungsanlagen - HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -89,7 +89,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_5e98adb05f.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_b17c91b563.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_37a5b41f86.jpg '>
-                                        <img data-src='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_b17c91b563.jpg' alt="Druckerhöhungsanlagen - KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/1/c/csm_knoll-druckerhoehungsstation-dhs-301x301-02_b17c91b563.jpg' alt="Druckerhöhungsanlagen - HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -128,7 +128,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_3f1ba37690.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_47016ce23e.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_da91165bfd.jpg '>
-                                        <img data-src='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_47016ce23e.jpg' alt="Standardfilter KF - KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/a/c/csm_knoll-standardanlage-kf-301x301-01_47016ce23e.jpg' alt="Standardfilter KF - HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -169,7 +169,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/c/2/csm_knoll-kratzbandfoerderer-k-301x301-01_4c3bf11b74.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/c/2/csm_knoll-kratzbandfoerderer-k-301x301-01_3fca7d38bf.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/c/2/csm_knoll-kratzbandfoerderer-k-301x301-01_18a9ff6385.jpg '>
-                                        <img data-src='/fileadmin/_processed_/c/2/csm_knoll-kratzbandfoerderer-k-301x301-01_3fca7d38bf.jpg' alt="Förderanlage Kratzbandförderer K - KNOLL Maschinenbau GmbH "></source>
+                                        <img data-src='/fileadmin/_processed_/c/2/csm_knoll-kratzbandfoerderer-k-301x301-01_3fca7d38bf.jpg' alt="Förderanlage Kratzbandförderer K - HYDROFOS Maschinenbau GmbH "></source>
                                         </source>
                                         </source>
                                         </source>
@@ -208,7 +208,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/4/d/csm_knoll-minimalmengenschmiersystem-controlube-301x301-01_878e68e724.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/4/d/csm_knoll-minimalmengenschmiersystem-controlube-301x301-01_f6a72158f9.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/4/d/csm_knoll-minimalmengenschmiersystem-controlube-301x301-01_98b764cc90.jpg '>
-                                        <img data-src='/fileadmin/_processed_/4/d/csm_knoll-minimalmengenschmiersystem-controlube-301x301-01_f6a72158f9.jpg' alt="Minimalmengenschmiersysteme - KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/4/d/csm_knoll-minimalmengenschmiersystem-controlube-301x301-01_f6a72158f9.jpg' alt="Minimalmengenschmiersysteme - HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>
@@ -249,7 +249,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                         <source media="(min-width: 768px)" data-srcset='/fileadmin/_processed_/1/6/csm_knoll-zerkleinerer-zv-600-301x301-01_a38924a9e9.jpg '>
                                         <source media="(min-width: 480px)" data-srcset='/fileadmin/_processed_/1/6/csm_knoll-zerkleinerer-zv-600-301x301-01_d58dd58616.jpg '>
                                         <source media="(max-width: 479px)" data-srcset='/fileadmin/_processed_/1/6/csm_knoll-zerkleinerer-zv-600-301x301-01_71244b93e1.jpg '>
-                                        <img data-src='/fileadmin/_processed_/1/6/csm_knoll-zerkleinerer-zv-600-301x301-01_d58dd58616.jpg' alt="Zerkleinerungsanlagen - KNOLL Maschinenbau GmbH"></source>
+                                        <img data-src='/fileadmin/_processed_/1/6/csm_knoll-zerkleinerer-zv-600-301x301-01_d58dd58616.jpg' alt="Zerkleinerungsanlagen - HYDROFOS Maschinenbau GmbH"></source>
                                         </source>
                                         </source>
                                         </source>

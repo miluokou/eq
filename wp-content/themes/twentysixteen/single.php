@@ -13,12 +13,12 @@ if(empty($args['头部大图片网址'][0])){
 
     <head>
         <meta charset="utf-8">
-        <title>KNOLL Maschinenbau GmbH - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai.</title>
+        <title>HYDROFOS Maschinenbau GmbH - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai.</title>
         <link hreflang="de" rel="alternate" href="index.htm">
         <link hreflang="en" rel="alternate" href="<?php echo $url; ?>\en\news\company\unpacked-the-k1-building-will-open-at-the-end-of-may\index.htm">
         <link hreflang="x-default" rel="alternate" href="index.htm">
         <link rel="canonical" href="index.htm">
-        <meta property="og:title" content="Aktuelles - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai. - KNOLL Maschinenbau">
+        <meta property="og:title" content="Aktuelles - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai. - HYDROFOS Maschinenbau">
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://www.knoll-mb.de/aktuelles/unternehmen/ausgepackt-das-gebaeude-k1-eroeffnet-ende-mai/">
         <meta property="og:image" content="https://www.knoll-mb.de/fileadmin/Home/Aktuelles/Unternehmen/knoll-empfang-301x301.jpg">
@@ -158,7 +158,7 @@ if(empty($args['头部大图片网址'][0])){
     <div class="overlay main_overlay hide" id="mainOverlay"></div>
     <div class="contact_header_module hide">
         <address class="common_para rte_atag">
-            <p>KNOLL Maschinenbau GmbH
+            <p>HYDROFOS Maschinenbau GmbH
                 <br>Schwarzachstraße 20
                 <br>D-88348 Bad Saulgau</p></address>
         <div class="kontakt_no">
@@ -180,7 +180,7 @@ if(empty($args['头部大图片网址'][0])){
                 <a href="javascript:linkTo_UnCryptMailto('ocknvq,kphq0kvyqtmuBmpqnn\/od0fg');">info.itworks(at)knoll-mb.de</a></div>
         </div>
         <div class="link_text common_para">
-            <a href='<?php echo $url; ?>\unternehmen\knoll-weltweit\index.htm'>KNOLL weltweit
+            <a href='<?php echo $url; ?>\unternehmen\knoll-weltweit\index.htm'>HYDROFOS weltweit
                 <i class="material-icons">arrow_forward</i></a>
         </div>
     </div>
@@ -195,7 +195,7 @@ if(empty($args['头部大图片网址'][0])){
                         <source media="(min-width: 1020px)" data-srcset='<?php echo $args['头部大图片网址'][0];?>'>
                         <source media="(min-width: 768px)" data-srcset='<?php echo $args['头部大图片网址'][0];?>'>
                         <source data-srcset='<?php echo $args['头部大图片网址'][0];?>'>
-                        <img data-src='<?php echo $args['头部大图片网址'][0];?>' alt="Knoll Maschinenbau GmbH – News" style="width: 100%;"></source>
+                        <img data-src='<?php echo $args['头部大图片网址'][0];?>' alt="HYDROFOS Maschinenbau GmbH – News" style="width: 100%;"></source>
                         </source>
                         </source>
                         </source>
@@ -219,7 +219,7 @@ if(empty($args['头部大图片网址'][0])){
                             <div class="social_text">Diesen Artikel teilen:</div>
                             <div class="social_share_icons">
                                 <html xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper">
-                                <div data-mail-url="mailto:" data-title="KNOLL Maschinenbau GmbH - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai." data-backend-url="/aktuelles/unternehmen/?eID=shariff" data-services="[&quot;whatsapp&quot;,&quot;facebook&quot;,&quot;xing&quot;,&quot;twitter&quot;,&quot;mail&quot;]" data-lang="de" class="shariff"></div>
+                                <div data-mail-url="mailto:" data-title="HYDROFOS Maschinenbau GmbH - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai." data-backend-url="/aktuelles/unternehmen/?eID=shariff" data-services="[&quot;whatsapp&quot;,&quot;facebook&quot;,&quot;xing&quot;,&quot;twitter&quot;,&quot;mail&quot;]" data-lang="de" class="shariff"></div>
 
                                 </html>
                             </div>
@@ -279,8 +279,8 @@ if(empty($args['头部大图片网址'][0])){
                                     <!--                                    <a class="hyphenate" title="Unternehmen" href="--><?php //echo $url; ?><!--\unternehmen\index.htm">Unternehmen</a></h4>-->
                                     <ul>
                                         <li class="menu_sub">
-                                            <!--<a href="/unternehmen/knoll-weltweit/">KNOLL weltweit</a>-->
-                                            <a class="hyphenate" title="KNOLL weltweit" href="<?php echo $url; ?>\unternehmen\knoll-weltweit\index.htm">KNOLL weltweit</a></li>
+                                            <!--<a href="/unternehmen/knoll-weltweit/">HYDROFOS weltweit</a>-->
+                                            <a class="hyphenate" title="HYDROFOS weltweit" href="<?php echo $url; ?>\unternehmen\knoll-weltweit\index.htm">HYDROFOS weltweit</a></li>
                                         <li class="menu_sub">
                                             <!--<a href="/unternehmen/#geschaeftsleitung">Geschäftsleitung</a>-->
                                             <a class="hyphenate" title="Geschäftsleitung" href="/unternehmen/geschaeftsleitung/">Geschäftsleitung</a></li>
@@ -482,7 +482,7 @@ if(empty($args['头部大图片网址'][0])){
                     <div class="col-md-3 text-right">
                         <div class="copyright">
                             <i class="fa fa-copyright" aria-hidden="true"></i>
-                            <p>KNOLL Maschinenbau GmbH
+                            <p>HYDROFOS Maschinenbau GmbH
                             <p></div>
                     </div>
                 </div>

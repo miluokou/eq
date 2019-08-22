@@ -33,7 +33,7 @@ if(!empty($zTaxonomyImageUrl)){
                     <source media="(min-width: 768px)" data-srcset='<?php echo $headImageUrl; ?>'>
                     <source data-srcset='<?php echo $headImageUrl; ?>'>
                     <img data-src='<?php echo $headImageUrl; ?>'
-                         alt="High pressure unit LubiCool - KNOLL Maschinenbau GmbH" style="width: 100%;"></source>
+                         alt="High pressure unit LubiCool - HYDROFOS Maschinenbau GmbH" style="width: 100%;"></source>
                     </source>
                     </source>
                     </source>

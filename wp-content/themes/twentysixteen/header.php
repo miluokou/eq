@@ -13,7 +13,7 @@
     <link rel="alternate" href="index.htm" hreflang="de">
     <link rel="alternate" href="en\index.htm" hreflang="en">
     <meta name="generator" content="TYPO3 CMS">
-    <title>KNOLL Maschinenbau GmbH - Startseite</title>
+    <title>HYDROFOS Maschinenbau GmbH - Startseite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="index,follow ">
     <link rel="apple-touch-icon" sizes="180x180" href="fileadmin\knoll\Resources\Public\images\Favicons\appletouchicon180x180.png">

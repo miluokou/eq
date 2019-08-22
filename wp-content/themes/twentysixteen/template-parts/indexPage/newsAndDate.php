@@ -261,10 +261,10 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
                           <meta itemprop="datePublished" content="2018-12-07"></time></span>in
                                     <!-- first category -->
                                     <span class="news-list-category">Presse</span></div>
-                                <div class="desc hyphenate">Staatssekretär Dr. Nussbaum zeichnet KNOLL Maschinenbau GmbH mit dem...
+                                <div class="desc hyphenate">Staatssekretär Dr. Nussbaum zeichnet HYDROFOS Maschinenbau GmbH mit dem...
                                     <br>
                                     <!-- teaser -->
-                                    <!-- <a class="more" title="Staatssekretär Dr. Nussbaum zeichnet KNOLL Maschinenbau GmbH mit dem SCHULEWIRTSCHAFT-Preis aus" href="/aktuelles/presse/staatssekretaer-dr-nussbaum-zeichnet-knoll-maschinenbau-gmbh-mit-dem-schulewirtschaft-preis-aus/">
+                                    <!-- <a class="more" title="Staatssekretär Dr. Nussbaum zeichnet HYDROFOS Maschinenbau GmbH mit dem SCHULEWIRTSCHAFT-Preis aus" href="/aktuelles/presse/staatssekretaer-dr-nussbaum-zeichnet-knoll-maschinenbau-gmbh-mit-dem-schulewirtschaft-preis-aus/">
                                     Weiterlesen
                                     </a>--></div>
                                 <div class="comman_para_link">
