@@ -12,6 +12,7 @@ $headImageUrl = z_taxonomy_image_url($c->term_id);
     get_template_part( 'template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/level2/lv2HeadImageAndProductDescription');
+
     if($c->name =="训练"){
         get_template_part( 'template-parts/level2/ProductOverview');
     }else{

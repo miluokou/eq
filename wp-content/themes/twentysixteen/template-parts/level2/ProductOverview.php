@@ -26,7 +26,10 @@ foreach ($threeAndFourInfo as $level3CateId => $threeAndFourSingle){
                 <div class="col-sm-6">
                     <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
                         <p><?php echo $currentlv3CateInfo->description; ?> </p></div><!--contacts_headline--><!--contacts_headline-->
-                    <div class="comman_para_link"><a href="<?php echo get_category_link($level3CateId);?>">了解更多<i class="material-icons">arrow_forward</i></a></div>
+                    <div class="comman_para_link"><a href="<?php echo get_category_link($level3CateId);?>">了解更多
+                            <i class="material-icons">arrow_forward</i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,16 +49,16 @@ foreach ($threeAndFourInfo as $level3CateId => $threeAndFourSingle){
                                             <div class="image_div smlbx">
                                                 <picture>
                                                     <source media="(min-width: 1200px)"
-                                                            data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                            data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                     <source media="(min-width: 992px)"
-                                                            data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                            data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                     <source media="(min-width: 768px)"
-                                                            data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                            data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                     <source media="(min-width: 480px)"
-                                                            data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                            data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                     <source media="(max-width: 479px)"
-                                                            data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
-                                                    <img data-src='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'
+                                                            data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
+                                                    <img data-src='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'
                                                          alt=""></source></source></source></source></source>
                                                 </picture>
                                             </div>
@@ -86,16 +89,16 @@ foreach ($threeAndFourInfo as $level3CateId => $threeAndFourSingle){
                                         <div class="image_div smlbx">
                                             <picture>
                                                 <source media="(min-width: 1200px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                        data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                 <source media="(min-width: 992px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                        data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                 <source media="(min-width: 768px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                        data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                 <source media="(min-width: 480px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
+                                                        data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
                                                 <source media="(max-width: 479px)"
-                                                        data-srcset='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'>
-                                                <img data-src='<?php echo z_taxonomy_image_url($chuck->term_id,'thumbnail') ;?>'
+                                                        data-srcset='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'>
+                                                <img data-src='<?php echo getCatFirstPostImage($chuck->term_id) ;?>'
                                                      alt=""></source></source></source></source></source>
                                             </picture>
                                         </div>

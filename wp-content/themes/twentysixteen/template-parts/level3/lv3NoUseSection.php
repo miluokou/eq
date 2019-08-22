@@ -1,3 +1,27 @@
+<?php
+$url = home_url();
+global $cat;
+$c = get_category($cat);
+
+$posts = get_posts("category=" . $c->term_id . "&order=ASC&numberposts=1000");
+
+//获取post的arg参数
+if (!empty($posts[0])) {
+    $args = get_metadata('post', $posts[0]->ID, $key, false);
+    if (!empty($args)) {
+        $conImageUrl = emptyAdjustment($args['正文图片']);
+    } else {
+        echo '这篇介绍没有设置头部大的图片,请联系管理员';
+        die;
+    }
+} else {
+    echo '这个分类下面没有写post页面,请联系编辑人员编写';
+    die;
+}
+
+
+?>
+
 <a id="c4651"></a>
 <section class="karriere secdv no_background" id="">
     <div class="container">
@@ -7,16 +31,16 @@
                 <div class="imag_gal_div">
                     <picture>
                         <source media="(min-width: 1200px)"
-                                data-srcset='/fileadmin/_processed_/4/5/csm_knoll-lubicool-1330x748_a3ec5e5034.jpg '>
+                                data-srcset='<?php echo $conImageUrl;?> '>
                         <source media="(min-width: 992px)"
-                                data-srcset='/fileadmin/_processed_/4/5/csm_knoll-lubicool-1330x748_d3858187ee.jpg '>
+                                data-srcset='<?php echo $conImageUrl;?> '>
                         <source media="(min-width: 768px)"
-                                data-srcset='/fileadmin/_processed_/4/5/csm_knoll-lubicool-1330x748_7b72c92403.jpg '>
+                                data-srcset='<?php echo $conImageUrl;?> '>
                         <source media="(min-width: 480px)"
-                                data-srcset='/fileadmin/_processed_/4/5/csm_knoll-lubicool-1330x748_4b21c5c107.jpg '>
+                                data-srcset='<?php echo $conImageUrl;?> '>
                         <source media="(max-width: 479px)"
-                                data-srcset='/fileadmin/_processed_/4/5/csm_knoll-lubicool-1330x748_23272522cc.jpg '>
-                        <img data-src="/fileadmin/_processed_/4/5/csm_knoll-lubicool-1330x748_34dda10b8d.jpg"></source>
+                                data-srcset='<?php echo $conImageUrl;?> '>
+                        <img data-src="<?php echo $conImageUrl;?> "></source>
                         </source>
                         </source>
                         </source>

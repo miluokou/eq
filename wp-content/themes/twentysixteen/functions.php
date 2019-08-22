@@ -1268,4 +1268,20 @@ function getNextLevelChildInfo($nextLevel =2 ){
     }
     return $threeAndFourInfo;
 }
+/**
+ * 获取分类下的第一篇文章，参数是term_id
+ */
+function getCatFirstPostImage($term_id)
+{
+    $posts = get_posts("category=" . $term_id . "&order=ASC&numberposts=1000");
+    $headImageUrl = '';
+//获取post的arg参数
+    if (!empty($posts[0])) {
+        $args = get_metadata('post', $posts[0]->ID, $key, false);
+        if (!empty($args)) {
+            $headImageUrl = emptyAdjustment($args['正文图片']);
+        }
+    }
+    return $headImageUrl;
+}
 add_filter('widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args');

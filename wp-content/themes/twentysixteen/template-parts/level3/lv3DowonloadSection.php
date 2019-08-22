@@ -22,6 +22,7 @@
         echo '这个分类下面没有写post页面,请联系编辑人员编写';
         die;
     }
+
 ?>
 
 <section class="Headline_Copy_Image secdv background_grey remove_bottom_padding " id="">
