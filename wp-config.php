@@ -23,10 +23,12 @@
 define('DB_NAME', 'eq');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'root');
+
+define('DB_USER', 'eq');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'cPzwExHn2h3xmbrA');
+
 
 /** MySQL主机 */
 define('DB_HOST', 'localhost');
