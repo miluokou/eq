@@ -9,14 +9,14 @@
         <li class="language_btn  ">
             <a>
                 <div class="icon language_icon">
-                    <span>DE</span>
+                    <span>中文</span>
                     <i class="material-icons">语言</i></div>
             </a>
             <ul>
                 <li class="active">
                     <a href="?lang=zh">
                         <div class="icon">
-                            <span>de</span></div>
+                            <span>中文</span></div>
                     </a>
                 </li>
                 <li class=" ">
@@ -31,7 +31,8 @@
             <a>
                 <div class="icon">
                     <i class="material-icons icon_person">person</i>
-                    <i class="material-icons icon_clear">clear</i></div>
+                    <i class="material-icons icon_clear">clear</i>
+                </div>
             </a>
             <div class="person_contact"></div>
         </li>
@@ -43,9 +44,9 @@
             </a>
             <ul>
                 <li>
-                    <a href="index.htm">
+                    <a href="/">
                         <div class="icon">
-                            <span>Zur Übersicht</span></div>
+                            <span>返回首页</span></div>
                     </a>
                 </li>
             </ul>
@@ -79,29 +80,28 @@
 <div class="overlay main_overlay hide" id="mainOverlay"></div>
 <div class="contact_header_module hide">
     <address class="common_para rte_atag">
-        <p>HYDROFOS Maschinenbau GmbH
-            <br>Schwarzachstraße 20
-            <br>D-88348 Bad Saulgau</p></address>
+            <br>海德福斯工业技术（天津）有限公司
+            <br>天津市西青经济技术开发区兴华一支路6号</p></address>
     <div class="kontakt_no">
         <div class="kontact_icons">
             <i class="material-icons icon_clear">phone</i></div>
         <div class="number common_para">
-            <a href="tel:+4975812008-0">+49 7581 2008-0</a></div>
+            <a href="tel:+4975812008-0">022-6059 7113</a></div>
     </div>
     <div class="kontakt_no">
         <div class="kontact_icons">
             <i class="material-icons icon_clear">print</i></div>
         <div class="number common_para">
-            <a href="fax:+4975812008-90140">+49 7581 2008-90140</a></div>
+            <a href="fax:+4975812008-90140">022-6059 7113</a></div>
     </div>
     <div class="kontakt_no">
         <div class="kontact_icons">
             <i class="material-icons icon_clear">email</i></div>
         <div class="number common_para">
-            <a href="javascript:linkTo_UnCryptMailto('ocknvq,kphq0kvyqtmuBmpqnn\/od0fg');">info.itworks(at)knoll-mb.de</a></div>
+            <a href="javascript:linkTo_UnCryptMailto('ocknvq,kphq0kvyqtmuBmpqnn\/od0fg');">info@hydrofos.com</a></div>
     </div>
     <div class="link_text common_para">
-        <a href='unternehmen\knoll-weltweit\index.htm'>HYDROFOS weltweit
+        <a href='/'>HYDROFOS weltweit
             <i class="material-icons">arrow_forward</i></a>
     </div>
 </div>
