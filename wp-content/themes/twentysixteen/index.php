@@ -80,18 +80,18 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                     <div class="custom-slides">
                             <?php
                             foreach ($catesLv1 as $cateLv1){
-                                if(!empty($cateLv1->description)){
+                                    $imageUrl = getCatFirstPostImage($cateLv1->term_id)
                                 ?>
                                 <div class="col-sm-3 col-xs-6 contbx">
                                     <a href="<?php  echo get_category_link($cateLv1->term_id);?>" class="manage_div_content_boxes">
                                         <div class="image_div smlbx">
                                             <picture>
-                                                <source media="(min-width: 1200px)" data-srcset='<?php  echo $cateLv1->description;?>'>
-                                                <source media="(min-width: 992px)" data-srcset='<?php  echo $cateLv1->description;?> '>
-                                                <source media="(min-width: 768px)" data-srcset='<?php  echo $cateLv1->description;?>'>
-                                                <source media="(min-width: 480px)" data-srcset='<?php  echo $cateLv1->description;?>'>
-                                                <source media="(max-width: 479px)" data-srcset='<?php  echo $cateLv1->description;?>'>
-                                                <img data-src='<?php  echo $cateLv1->description;?>' alt="Kompaktfilter KF - HYDROFOS Maschinenbau GmbH"></source>
+                                                <source media="(min-width: 1200px)" data-srcset='<?php  echo $imageUrl;?>'>
+                                                <source media="(min-width: 992px)" data-srcset='<?php  echo $imageUrl;?> '>
+                                                <source media="(min-width: 768px)" data-srcset='<?php  echo $imageUrl;?>'>
+                                                <source media="(min-width: 480px)" data-srcset='<?php  echo $imageUrl;?>'>
+                                                <source media="(max-width: 479px)" data-srcset='<?php  echo $imageUrl;?>'>
+                                                <img data-src='<?php  echo $imageUrl;?>' alt="Kompaktfilter KF - HYDROFOS Maschinenbau GmbH"></source>
                                                 </source>
                                                 </source>
                                                 </source>
@@ -113,7 +113,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                                 </div>
 
                             <?php
-                                }
+
                             }?>
 
 
