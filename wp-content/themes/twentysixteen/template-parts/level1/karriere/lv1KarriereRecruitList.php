@@ -36,7 +36,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                         echo ' <div class="custom-slides">';
                         if(!empty($pice)){
                             foreach ($pice as $pi){
-                                $imageUrl = z_taxonomy_image_url($pi->term_id,'thumbnail')
+                                $imageUrl = getCatFirstPostImage($pi->term_id)
                             ?>
                                 <div class="col-sm-3 col-xs-6 contbx">
                                     <a href="<?php echo get_category_link($pi->term_id);?>"
