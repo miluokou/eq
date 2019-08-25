@@ -18,16 +18,30 @@
  * @package WordPress
  */
 
-// ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
-/** WordPress数据库的名称 */
-define('DB_NAME', 'eq');
+if($_SERVER['SERVER_ADDR'] == '::1'){
+    // ** 本地的设置** //
+    /** WordPress数据库的名称 */
+    define('DB_NAME', 'eq');
 
-/** MySQL数据库用户名 */
+    /** MySQL数据库用户名 */
 
-define('DB_USER', 'eq');
+    define('DB_USER', 'root');
 
-/** MySQL数据库密码 */
-define('DB_PASSWORD', 'cPzwExHn2h3xmbrA');
+    /** MySQL数据库密码 */
+    define('DB_PASSWORD', '');
+}else{
+    // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
+    /** WordPress数据库的名称 */
+    define('DB_NAME', 'eq');
+
+    /** MySQL数据库用户名 */
+
+    define('DB_USER', 'eq');
+
+    /** MySQL数据库密码 */
+    define('DB_PASSWORD', 'cPzwExHn2h3xmbrA');
+}
+
 
 
 /** MySQL主机 */
