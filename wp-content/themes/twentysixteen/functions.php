@@ -1279,7 +1279,7 @@ function getCatFirstPostImage($term_id)
     if (!empty($posts[0])) {
         $args = get_metadata('post', $posts[0]->ID, $key, false);
         if (!empty($args)) {
-            $headImageUrl = emptyAdjustment($args['正文图片']);
+            $headImageUrl = emptyAdjustment($args['显示到上一级的缩略图URL']);
         }
     }
     return $headImageUrl;
