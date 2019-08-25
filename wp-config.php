@@ -101,3 +101,14 @@ if ( !defined('ABSPATH') )
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
+
+define('公司ID', 1);
+define('中央系统ID', 22);
+define('事业ID', 2);
+define('单一系统ID', 20);
+define('联系我们ID', 34);
+define('新闻ID', 32);
+define('服务ID', 28);
+define('泵ID', 26);
+define('运输系统ID', 24);
+

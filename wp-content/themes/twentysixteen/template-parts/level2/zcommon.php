@@ -2,7 +2,6 @@
 $url=home_url();
 global $cat;
 $c = get_category($cat);
-$headImageUrl = z_taxonomy_image_url($c->term_id);
 
 ?>
 <!DOCTYPE html>
