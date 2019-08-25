@@ -68,7 +68,7 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');
     echo $posts[0]->post_content;
-}else if($c->term_id == "新闻"){
+}else if($c->name  == "新闻"){
     get_template_part('template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');

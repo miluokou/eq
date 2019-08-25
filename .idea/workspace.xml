@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbefb8b8-f6fb-433a-abb9-17d5b78644db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level1/zcommon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/zcommon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/template-parts/level2/zcommon.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
