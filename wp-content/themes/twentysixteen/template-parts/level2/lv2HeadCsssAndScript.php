@@ -8,7 +8,7 @@ $url = home_url();
     <link hreflang="en" rel="alternate" href="..\en\single-systems\index.htm">
     <link hreflang="x-default" rel="alternate" href="index.htm">
     <link rel="canonical" href="index.htm">
-    <meta name="description" content="KNOLL Einzelanlagen sind z.B. Zubehör für Werkzeugmaschinen und dienen zum Trennen, Transportieren und Aufbereiten von Spänen und Kühlschmierstoffen.">
+    <meta name="description" content="HYDROFOS Einzelanlagen sind z.B. Zubehör für Werkzeugmaschinen und dienen zum Trennen, Transportieren und Aufbereiten von Spänen und Kühlschmierstoffen.">
     <link rel="alternate" href="index.htm" hreflang="x-default">
     <link rel="alternate" href="index.htm" hreflang="de">
     <link rel="alternate" href="<?php echo $url;?>\en\single-systems\index.htm" hreflang="en">

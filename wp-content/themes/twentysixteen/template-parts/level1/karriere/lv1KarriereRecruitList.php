@@ -17,7 +17,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
             <div class="col-sm-6"><h2 class="big remove_margin_header_top hyphenate">目前的职位空缺</h2></div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag"><p>
-                        您是否在寻找一个令人兴奋的工作环境，并希望您的个人发展不被忽视？那你就是KNOLL。我们正在寻找开发和生产，服务员工，销售人员和管理专业人员的问题解决者。在这里找到最适合您的个人资料！</p>
+                        您是否在寻找一个令人兴奋的工作环境，并希望您的个人发展不被忽视？那你就是HYDROFOS。我们正在寻找开发和生产，服务员工，销售人员和管理专业人员的问题解决者。在这里找到最适合您的个人资料！</p>
                 </div><!--contacts_headline--><!--contacts_headline-->
                 <div class="comman_para_link"><a href="<?php echo get_category_link($currentSubclasses[0]->term_id);?>">查看工作机会<i
                                 class="material-icons">arrow_forward</i></a></div>

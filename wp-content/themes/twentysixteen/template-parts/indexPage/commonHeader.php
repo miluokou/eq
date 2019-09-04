@@ -8,7 +8,7 @@ $url=site_url();
     <link hreflang="en" rel="alternate" href="index.htm">
     <link hreflang="x-default" rel="alternate" href="<?php echo $url;?>\einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm">
     <link rel="canonical" href="index.htm">
-    <meta name="description" content="HYDROFOS Maschinenbau GmbH Schwarzachstraße 20 D-88348 Bad Saulgauphone+49 7581 2008-91168print+49 7581 2008-90140emaileinzelanlagen.itworks(at)knoll-mb.deKNOLL...">
+    <meta name="description" content="HYDROFOS Maschinenbau GmbH Schwarzachstraße 20 D-88348 Bad Saulgauphone+49 7581 2008-91168print+49 7581 2008-90140emaileinzelanlagen.itworks(at)knoll-mb.deHYDROFOS...">
     <link rel="alternate" href="<?php echo $url;?>\einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm" hreflang="x-default">
     <link rel="alternate" href="<?php echo $url;?>\einzelanlagen\hochdruckanlagen\hochdruckanlage-lubicoolr\index.htm" hreflang="de">
     <link rel="alternate" href="index.htm" hreflang="en">

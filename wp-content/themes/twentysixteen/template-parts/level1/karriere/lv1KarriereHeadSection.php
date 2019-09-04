@@ -5,7 +5,7 @@
     <link hreflang="x-default" rel="alternate" href="index.htm">
     <link rel="canonical" href="index.htm">
     <meta name="description"
-          content="KNOLL verbindet die Innovationskraft des Weltmarktführers mit der Herzlichkeit eines mittelständischen Familienunternehmens. Jetzt mehr erfahren zum Arbeitgeber KNOLL!">
+          content="HYDROFOS verbindet die Innovationskraft des Weltmarktführers mit der Herzlichkeit eines mittelständischen Familienunternehmens. Jetzt mehr erfahren zum Arbeitgeber HYDROFOS!">
     <link rel="alternate" href="index.htm" hreflang="x-default">
     <link rel="alternate" href="index.htm" hreflang="de">
     <link rel="alternate" href="..\en\careers\index.htm" hreflang="en">

@@ -8,7 +8,7 @@
     <link hreflang="en" rel="alternate" href="en\index.htm">
     <link hreflang="x-default" rel="alternate" href="index.htm">
     <link rel="canonical" href="index.htm">
-    <meta name="description" content="Das Familienunternehmen KNOLL beliefert den Markt mit einer breiten Palette von Produkten zum Fördern, Filtern und Pumpen von verunreinigten Kühlschmierstoffen und Spänen.">
+    <meta name="description" content="Das Familienunternehmen HYDROFOS beliefert den Markt mit einer breiten Palette von Produkten zum Fördern, Filtern und Pumpen von verunreinigten Kühlschmierstoffen und Spänen.">
     <link rel="alternate" href="index.htm" hreflang="x-default">
     <link rel="alternate" href="index.htm" hreflang="de">
     <link rel="alternate" href="en\index.htm" hreflang="en">

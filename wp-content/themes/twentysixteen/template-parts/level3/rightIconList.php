@@ -113,7 +113,7 @@
         </div>
     </div>
     <div class="link_text common_para">
-        <a href='..\..\..\company\knoll-worldwide\index.htm'>KNOLL worldwide
+        <a href='..\..\..\company\knoll-worldwide\index.htm'>HYDROFOS worldwide
             <i class="material-icons">arrow_forward</i></a>
     </div>
 </div>

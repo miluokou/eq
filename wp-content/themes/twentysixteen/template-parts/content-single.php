@@ -23,8 +23,8 @@ if(empty($args['头部大图片网址'][0])){
         <meta property="og:image" content="https://www.knoll-mb.de/fileadmin/Home/Aktuelles/Unternehmen/knoll-empfang-301x301.jpg">
         <meta property="og:image:width" content="301">
         <meta property="og:image:height" content="301">
-        <meta name="description" content="Die Eröffnung des neuen KNOLL Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
-        <meta property="og:description" content="Die Eröffnung des neuen KNOLL Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
+        <meta name="description" content="Die Eröffnung des neuen HYDROFOS Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
+        <meta property="og:description" content="Die Eröffnung des neuen HYDROFOS Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
         <meta name="generator" content="TYPO3 CMS">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="robots" content="index,follow ">
@@ -74,7 +74,7 @@ if(empty($args['头部大图片网址'][0])){
         <nav class="navbar">
             <div class="navbar-header">
                 <a class="navbar-brand-logo" href="<?php echo $url; ?>\index.htm">
-                    <img src="<?php echo $url; ?>\fileadmin\knoll\Resources\Public\images\KNOLL-Logo_4c.svg" alt="" class="img-responsive"></a>
+                    <img src="<?php echo $url; ?>\fileadmin\knoll\Resources\Public\images\HYDROFOS-Logo_4c.svg" alt="" class="img-responsive"></a>
                 <!-- <a class="navbar-brand-logo" href="/">
                 <picture>
                 source media="(min-width: 768px)" srcset="images/logo.png, width: '125px'"

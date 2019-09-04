@@ -8,9 +8,6 @@ if($houzhui == '_zh'){
 //    $newsCateId = get_cat_ID('新闻');
     $componyId = get_cat_ID('公司');
 }
-//$posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
-
-//$newsLink = get_category_link($newsCateId);
 $componyLink = get_category_link($componyId);
 $catesLv1 = get_parent0();
 $banner = show_banners();
@@ -66,7 +63,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                 <h2 class='big remove_margin_header_top hyphenate'>制品</h2></div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>KNOLL是金属加工输送系统，过滤系统和泵的领先供应商。它们运输和分离芯片和冷却润滑剂。另一个部门通过装配和运输系统解决了苛刻的物流任务</p>
+                    <p>HYDROFOS是金属加工输送系统，过滤系统和泵的领先供应商。它们运输和分离芯片和冷却润滑剂。另一个部门通过装配和运输系统解决了苛刻的物流任务</p>
                 </div>
              </div>
         </div>
@@ -80,7 +77,9 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                     <div class="custom-slides">
                             <?php
                             foreach ($catesLv1 as $cateLv1){
-                                    $imageUrl = getCatFirstPostImage($cateLv1->term_id)
+
+                                    $imageUrl = getCatFirstPostImage($cateLv1->term_id);
+
                                 ?>
                                 <div class="col-sm-3 col-xs-6 contbx">
                                     <a href="<?php  echo get_category_link($cateLv1->term_id);?>" class="manage_div_content_boxes">

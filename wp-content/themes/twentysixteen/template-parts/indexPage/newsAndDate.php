@@ -15,7 +15,7 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
             </div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>关于KNOLL员工，产品，活动的精彩信息 - KNOLL live每周7天每天24小时开放。</p>
+                    <p>关于HYDROFOS员工，产品，活动的精彩信息 - HYDROFOS live每周7天每天24小时开放。</p>
                 </div>
                 <!--contacts_headline-->
                 <!--contacts_headline-->
@@ -226,7 +226,7 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
                                 <div class="desc hyphenate">Pumpenfabrik Wangen übernimmt den Geschäftsbereich Exzenterschneckenpumpe...
                                     <br>
                                     <!-- teaser -->
-                                    <!-- <a class="more" title="Pumpenfabrik Wangen übernimmt den Geschäftsbereich Exzenterschneckenpumpe von KNOLL" href="/aktuelles/presse/pumpenfabrik-wangen-uebernimmt-den-geschaeftsbereich-exzenterschneckenpumpe-von-knoll/">
+                                    <!-- <a class="more" title="Pumpenfabrik Wangen übernimmt den Geschäftsbereich Exzenterschneckenpumpe von HYDROFOS" href="/aktuelles/presse/pumpenfabrik-wangen-uebernimmt-den-geschaeftsbereich-exzenterschneckenpumpe-von-knoll/">
                                     Weiterlesen
                                     </a>--></div>
                                 <div class="comman_para_link">
@@ -299,10 +299,10 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
                           <meta itemprop="datePublished" content="2018-11-30"></time></span>in
                                     <!-- first category -->
                                     <span class="news-list-category">Unternehmen</span></div>
-                                <div class="desc hyphenate">KNOLL ist familienverbunden und weltoffen.
+                                <div class="desc hyphenate">HYDROFOS ist familienverbunden und weltoffen.
                                     <br>
                                     <!-- teaser -->
-                                    <!-- <a class="more" title="KNOLL ist familienverbunden und weltoffen." href="/aktuelles/unternehmen/knoll-ist-familienverbunden-und-weltoffen/">
+                                    <!-- <a class="more" title="HYDROFOS ist familienverbunden und weltoffen." href="/aktuelles/unternehmen/knoll-ist-familienverbunden-und-weltoffen/">
                                     Weiterlesen
                                     </a>--></div>
                                 <div class="comman_para_link">
@@ -337,10 +337,10 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
                           <meta itemprop="datePublished" content="2018-11-16"></time></span>in
                                     <!-- first category -->
                                     <span class="news-list-category">Unternehmen</span></div>
-                                <div class="desc hyphenate">KNOLL goes Global und baut weltweit eigene Niederlassungen auf ...
+                                <div class="desc hyphenate">HYDROFOS goes Global und baut weltweit eigene Niederlassungen auf ...
                                     <br>
                                     <!-- teaser -->
-                                    <!-- <a class="more" title="KNOLL goes Global und baut weltweit eigene Niederlassungen auf" href="/aktuelles/unternehmen/knoll-goes-global-und-baut-weltweit-eigene-niederlassungen-auf/">
+                                    <!-- <a class="more" title="HYDROFOS goes Global und baut weltweit eigene Niederlassungen auf" href="/aktuelles/unternehmen/knoll-goes-global-und-baut-weltweit-eigene-niederlassungen-auf/">
                                     Weiterlesen
                                     </a>--></div>
                                 <div class="comman_para_link">

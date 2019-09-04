@@ -101,7 +101,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                     <!-- small box -->
                                     <div class="heading_1"></div>
                                     <div class="para_1 rte_atag">
-                                        <p>KNOLL Hochdruckanlagen dienen zur Versorgung von Werkzeugmaschinen wie Bearbeitungszentren und Drehautomaten. Für den richtigen Vorlaufdruck an den verschiedenen Verbrauchern sorgen dabei Hochdruckpumpen.</p>
+                                        <p>HYDROFOS Hochdruckanlagen dienen zur Versorgung von Werkzeugmaschinen wie Bearbeitungszentren und Drehautomaten. Für den richtigen Vorlaufdruck an den verschiedenen Verbrauchern sorgen dabei Hochdruckpumpen.</p>
                                     </div>
                                     <div class="comman_para_link">
                         <span>Mehr anzeigen
@@ -140,7 +140,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                     <!-- small box -->
                                     <div class="heading_1"></div>
                                     <div class="para_1 rte_atag">
-                                        <p>KSS-Filter von KNOLL reinigen Kühlschmierstoffe bis in den hochfeinen Bereich, auch ohne Filterverbrauchsstoffe. Die KSS-Filter arbeiten dabei lokal für Einzelmaschinen sowie zentral für Maschinengruppen oder komplette Fertigungsbereiche.</p>
+                                        <p>KSS-Filter von HYDROFOS reinigen Kühlschmierstoffe bis in den hochfeinen Bereich, auch ohne Filterverbrauchsstoffe. Die KSS-Filter arbeiten dabei lokal für Einzelmaschinen sowie zentral für Maschinengruppen oder komplette Fertigungsbereiche.</p>
                                     </div>
                                     <div class="comman_para_link">
                         <span>Mehr anzeigen
@@ -181,7 +181,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                     <!-- small box -->
                                     <div class="heading_1"></div>
                                     <div class="para_1 rte_atag">
-                                        <p>KNOLL-Späneförderer gibt es in verschiedenen Bauarten sowohl maschinenintegriert als auch zentral aufgestellt. Je nach Späneart und Transportstrecke kommen neben Bandförderern auch Schneckenförderer und Zugklappenförderer zum Einsatz.</p>
+                                        <p>HYDROFOS-Späneförderer gibt es in verschiedenen Bauarten sowohl maschinenintegriert als auch zentral aufgestellt. Je nach Späneart und Transportstrecke kommen neben Bandförderern auch Schneckenförderer und Zugklappenförderer zum Einsatz.</p>
                                     </div>
                                     <div class="comman_para_link">
                         <span>Mehr anzeigen
@@ -220,7 +220,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                     <!-- small box -->
                                     <div class="heading_1"></div>
                                     <div class="para_1 rte_atag">
-                                        <p>Das MMS-System ControLube von KNOLL vereint die Vorteile der bisher gängigen Einkanal- und Zweikanal-MMS-Systeme. Darüber hinaus bietet die neuartige Technik besondere Merkmale mit hohem Anwendernutzen.</p>
+                                        <p>Das MMS-System ControLube von HYDROFOS vereint die Vorteile der bisher gängigen Einkanal- und Zweikanal-MMS-Systeme. Darüber hinaus bietet die neuartige Technik besondere Merkmale mit hohem Anwendernutzen.</p>
                                     </div>
                                     <div class="comman_para_link">
                         <span>Mehr anzeigen
@@ -261,7 +261,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                     <!-- small box -->
                                     <div class="heading_1"></div>
                                     <div class="para_1 rte_atag">
-                                        <p>KNOLL-Spänezerkleinerer schneiden Metall- und Kunststoffspäne bis zur Schüttgut-Qualität. Die Zerkleinerer können an Bearbeitungsmaschinen oder an zentralen Sammelstellen installiert werden. Je nach Modell ist eine vertikale oder horizontale Spanzufuhr möglich, in einigen Anwendungen auch mit Störteilauswurf.</p>
+                                        <p>HYDROFOS-Spänezerkleinerer schneiden Metall- und Kunststoffspäne bis zur Schüttgut-Qualität. Die Zerkleinerer können an Bearbeitungsmaschinen oder an zentralen Sammelstellen installiert werden. Je nach Modell ist eine vertikale oder horizontale Spanzufuhr möglich, in einigen Anwendungen auch mit Störteilauswurf.</p>
                                     </div>
                                     <div class="comman_para_link">
                         <span>Mehr anzeigen

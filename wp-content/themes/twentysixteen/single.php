@@ -40,8 +40,8 @@ if(!empty($args['新闻轮播图3'][0])){
         <meta property="og:image" content="https://www.knoll-mb.de/fileadmin/Home/Aktuelles/Unternehmen/knoll-empfang-301x301.jpg">
         <meta property="og:image:width" content="301">
         <meta property="og:image:height" content="301">
-        <meta name="description" content="Die Eröffnung des neuen KNOLL Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
-        <meta property="og:description" content="Die Eröffnung des neuen KNOLL Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
+        <meta name="description" content="Die Eröffnung des neuen HYDROFOS Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
+        <meta property="og:description" content="Die Eröffnung des neuen HYDROFOS Verwaltungsgebäudes K1 steht kurz bevor, der Umzug ist für Ende Mai geplant.">
         <meta name="generator" content="TYPO3 CMS">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="robots" content="index,follow ">
