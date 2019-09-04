@@ -60,12 +60,18 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
                                     </picture>
                                 </div>
                                 <div class="post_content">
-                                    <div class="date">
+                                    <div class="date" >
+                                    	<?php echo  $post->post_date;?>
                                         <!-- date -->
-                                        <span class="news-list-date"><time datetime="2019-05-07">07.05.2019
-                                                <meta itemprop="datePublished" content="2019-05-07"></time></span>in
+                                        <span class="news-list-date" style="display:none;"><time datetime="<?php echo  $post->post_date;?>"><?php echo  $post->post_date;?>
+                                                <meta itemprop="datePublished" content="<?php echo  $post->post_date;?>">
+                                                </time>
+                                        </span>
+                                                <!--in-->
                                         <!-- first category -->
-                                        <span class="news-list-category">Unternehmen</span></div>
+                                        <!--<span class="news-list-category">Unternehmen</span>-->
+                                    </div>
+                                    
                                     <div class="desc hyphenate"><?php echo  $post->post_title;?><br></div>
                                     <div class="comman_para_link">
                                           <span href="aktuelles\unternehmen\ausgepackt-das-gebaeude-k1-eroeffnet-ende-mai\index.htm">了解更多

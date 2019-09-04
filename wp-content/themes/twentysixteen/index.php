@@ -11,6 +11,10 @@ if($houzhui == '_zh'){
 $componyLink = get_category_link($componyId);
 $catesLv1 = get_parent0();
 $banner = show_banners();
+$res =get_category(get_cat_ID('新闻'));
+echo '<pre>';
+var_dump($res);
+die;
 
 ?>
 
@@ -18,7 +22,7 @@ $banner = show_banners();
 
 <?php 
 get_template_part( 'template-parts/indexPage/navBar');
- get_template_part('template-parts/indexPage/rightIconList');
+get_template_part('template-parts/indexPage/rightIconList');
 get_template_part( 'template-parts/common/rotaryPlantingMap');
 get_template_part( 'template-parts/indexPage/newsAndDate');
 ?>

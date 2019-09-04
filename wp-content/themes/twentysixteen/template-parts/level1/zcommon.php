@@ -61,7 +61,8 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');
-    get_template_part('template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds');
+    get_template_part( 'template-parts/level2/OldProductOverview');
+    // get_template_part('template-parts/level1/centralSystem/lv2Pictrue1AndDescriptionAndCateChilds');
 
 }else if($c->name == "联系我们"){
     get_template_part('template-parts/indexPage/navBar');
