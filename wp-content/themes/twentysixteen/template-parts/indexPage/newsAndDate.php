@@ -11,11 +11,11 @@ $posts = get_posts("category=" . $newsCateId . "&order=DESC&numberposts=10");
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <h2 class='big remove_margin_header_top hyphenate'>新闻和日期</h2>
+                <h2 class='big remove_margin_header_top hyphenate'>新闻</h2>
             </div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>关于HYDROFOS员工，产品，活动的精彩信息 - HYDROFOS live每周7天每天24小时开放。</p>
+                    <p><?php echo get_category(get_cat_ID('新闻'))->description;?></p>
                 </div>
                 <!--contacts_headline-->
                 <!--contacts_headline-->

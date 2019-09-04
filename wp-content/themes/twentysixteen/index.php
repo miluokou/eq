@@ -11,10 +11,7 @@ if($houzhui == '_zh'){
 $componyLink = get_category_link($componyId);
 $catesLv1 = get_parent0();
 $banner = show_banners();
-$res =get_category(get_cat_ID('新闻'));
-echo '<pre>';
-var_dump($res);
-die;
+
 
 ?>
 
@@ -34,7 +31,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                 <h2 class='big remove_margin_header_top hyphenate'>
                     </h2>
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>我们专注于为客户做好事。为此，我们为公司创造了最佳条件。我们运动的创新和进步。 </p>
+                    <p><?php echo get_category(get_cat_ID('公司'))->description; ?></p>
                  </div>
 
                 <div class="common_para comman_para_link">
@@ -259,11 +256,11 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
         <div class="row">
             <div class="col-sm-6">
                 <h2 class='big remove_margin_header_top hyphenate'>
-                    <!--TYPO3SEARCH_begin-->职业生涯
+                    <!--TYPO3SEARCH_begin-->事业
                     <!--TYPO3SEARCH_end--></h2></div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>与我们一起发展一家成功的公司。我们希望进一步发展，为员工和受训人员提供良好的条件。</p>
+                    <p><?php echo get_category(get_cat_ID('事业'))->description; ?></p>
                 </div>
                 <!--contacts_headline-->
                 <!--contacts_headline-->
@@ -293,7 +290,7 @@ get_template_part( 'template-parts/indexPage/newsAndDate');
                 <h2 class='big remove_margin_header_top hyphenate'>服务</h2></div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>如果您需要快速，在这里您可以找到所有重要的信息和联系方式。 </p>
+                    <p><?php echo get_category(get_cat_ID('服务'))->description; ?> </p>
                 </div>
                 <!--contacts_headline-->
                 <!--contacts_headline-->
