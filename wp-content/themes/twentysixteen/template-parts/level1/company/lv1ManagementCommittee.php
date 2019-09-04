@@ -2,17 +2,20 @@
 <?php
 $guanli = get_cat_ID('管理');
 $guanliPosts = get_posts("category=" . $guanli . "&order=DESC&numberposts=5");
+
+$c = get_category(48);
+
 ?>
 <section class="Headline_Copy_Image secdv background_grey remove_bottom_padding " id="management-board">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
                 <h2 class='big remove_margin_header_top hyphenate'>
-                    <!--TYPO3SEARCH_begin-->管理委员会
+                    <!--TYPO3SEARCH_begin--><?php echo $c->name;?>
                     <!--TYPO3SEARCH_end--></h2></div>
             <div class="col-sm-6">
                 <div class="headline_copy_image_common_para common_para common_para_light rte_atag">
-                    <p>儿子Matthias和JürgenKnoll是第二代管理这家由Walter Knoll创立的家族企业。他们也是股东。</p>
+                    <p><?php echo $c->description;?></p>
                 </div>
             </div>
         </div>

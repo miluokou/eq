@@ -33,7 +33,7 @@ if($c->name == "公司"){
     get_template_part('template-parts/indexPage/navBar');
     get_template_part('template-parts/indexPage/rightIconList');
     get_template_part('template-parts/common/headCateImageSection');
-    get_template_part('template-parts/common/post0TitleAndDescription');
+    // get_template_part('template-parts/common/post0TitleAndDescription');
     get_template_part('template-parts/level1/company/lv1ManagementCommittee');
     get_template_part('template-parts/level1/company/lv1HistorySection');
     get_template_part('template-parts/level1/company/lv1CertificateSection');

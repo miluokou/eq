@@ -7,7 +7,23 @@ $url=home_url();
 $args=get_metadata( 'post', $post->ID, $key, false);
 if(empty($args['头部大图片网址'][0])){
     echo '没有设置顶部的图像，请联系编辑编辑'; die;
-} ?>
+} 
+
+if(!empty($args['新闻轮播图1'][0])){
+
+    $newsLunbo1 = $args['新闻轮播图1'][0];
+} 
+if(!empty($args['新闻轮播图2'][0])){
+
+    $newsLunbo2 = $args['新闻轮播图2'][0];
+} 
+if(!empty($args['新闻轮播图3'][0])){
+  
+    $newsLunbo3 = $args['新闻轮播图3'][0];
+} 
+
+
+?>
     <!DOCTYPE html>
     <html lang="de">
 
@@ -216,7 +232,7 @@ if(empty($args['头部大图片网址'][0])){
 
                         </div>
                         <div class="col-sm-2">
-                            <div class="social_text">Diesen Artikel teilen:</div>
+                           
                             <div class="social_share_icons">
                                 <html xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper">
                                 <div data-mail-url="mailto:" data-title="HYDROFOS Maschinenbau GmbH - Ausgepackt: Das Gebäude K1 eröffnet Ende Mai." data-backend-url="/aktuelles/unternehmen/?eID=shariff" data-services="[&quot;whatsapp&quot;,&quot;facebook&quot;,&quot;xing&quot;,&quot;twitter&quot;,&quot;mail&quot;]" data-lang="de" class="shariff"></div>
@@ -236,12 +252,29 @@ if(empty($args['头部大图片网址'][0])){
                             <div class="news_details_page_content" id="">
                                 <!--gallery/slider variation3--->
                                 <div class="post_image gallery_slider">
-                                    <div class="image_background">
-                                        <img src='<?php echo $url; ?>\fileadmin\Home\Aktuelles\Unternehmen\knoll-empfang-1000x550.jpg' alt="" class="img-responsive"></div>
-                                    <div class="image_background">
-                                        <img src='<?php echo $url; ?>\fileadmin\Home\Aktuelles\Unternehmen\knoll-luftbild-1000x550.jpg' alt="" class="img-responsive"></div>
-                                    <div class="image_background">
-                                        <img src='<?php echo $url; ?>\fileadmin\Home\Aktuelles\Unternehmen\knoll-fassade-1000x550.jpg' alt="" class="img-responsive"></div>
+                                	<?php if(!empty($newsLunbo1)){
+                                		?>
+                                	    <div class="image_background">
+                                           <img src='<?php echo $newsLunbo1; ?>' alt="" class="img-responsive">
+                                        </div>	
+                                		<?php	
+                                	}?>
+                                	<?php if(!empty($newsLunbo2)){
+                                		?>
+                                	    <div class="image_background">
+                                           <img src='<?php echo $newsLunbo2; ?>' alt="" class="img-responsive">
+                                        </div>	
+                                		<?php	
+                                	}?>
+                                	<?php if(!empty($newsLunbo3)){
+                                		?>
+                                	    <div class="image_background">
+                                           <img src='<?php echo $newsLunbo3; ?>' alt="" class="img-responsive">
+                                        </div>	
+                                		<?php	
+                                	}?>
+                              
+                                    
                                 </div>
                                 <!--gallery/slider variation3 ends--->
                                 <div class="content-dv rte_atag rte_img">
@@ -268,239 +301,8 @@ if(empty($args['头部大图片网址'][0])){
             <!-- content elements -->
             <!--dce download module separate--></div>
     </div>
-    <footer id="footer">
-        <div class="footer_dv">
-            <div class="container">
-                <div class="row footer_menu_desktop visible-xs-block">
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <!--                                    <a class="hyphenate" title="Unternehmen" href="--><?php //echo $url; ?><!--\unternehmen\index.htm">Unternehmen</a></h4>-->
-                                    <ul>
-                                        <li class="menu_sub">
-                                            <!--<a href="/unternehmen/knoll-weltweit/">HYDROFOS weltweit</a>-->
-                                            <a class="hyphenate" title="HYDROFOS weltweit" href="<?php echo $url; ?>\unternehmen\knoll-weltweit\index.htm">HYDROFOS weltweit</a></li>
-                                        <li class="menu_sub">
-                                            <!--<a href="/unternehmen/#geschaeftsleitung">Geschäftsleitung</a>-->
-                                            <a class="hyphenate" title="Geschäftsleitung" href="/unternehmen/geschaeftsleitung/">Geschäftsleitung</a></li>
-                                        <li class="menu_sub">
-                                            <!--<a href="/unternehmen/#historie">Historie</a>-->
-                                            <a class="hyphenate" title="Historie" href="/unternehmen/historie/">Historie</a></li>
-                                        <li class="menu_sub">
-                                            <!--<a href="/unternehmen/#unternehmensleitbild">Unternehmensleitbild</a>-->
-                                            <a class="hyphenate" title="Unternehmensleitbild" href="/unternehmen/unternehmensleitbild/">Unternehmensleitbild</a></li>
-                                        <li class="menu_sub">
-                                            <!--<a href="/unternehmen/#portrait">Portrait</a>-->
-                                            <a class="hyphenate" title="Portrait" href="/unternehmen/portrait/">Portrait</a></li>
-                                        <li class="menu_sub">
-                                            <!--<a href="/unternehmen/#zertifikate">Zertifikate</a>-->
-                                            <a class="hyphenate" title="Zertifikate" href="/unternehmen/zertifikate/">Zertifikate</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <!--<a href="/einzelanlagen/" class="">Einzelanlagen</a>-->
-                                    <a class="hyphenate" title="Einzelanlagen" href="<?php echo $url; ?>\einzelanlagen\index.htm">Einzelanlagen</a></h4>
-                                <ul>
-                                    <li class="menu_sub">
-                                        <!--<a href="/einzelanlagen/hochdruckanlagen/">Hochdruckanlagen</a>-->
-                                        <a class="hyphenate" title="Hochdruckanlagen" href="<?php echo $url; ?>\einzelanlagen\hochdruckanlagen\index.htm">Hochdruckanlagen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/einzelanlagen/filteranlagen/">Filteranlagen</a>-->
-                                        <a class="hyphenate" title="Filteranlagen" href="<?php echo $url; ?>\einzelanlagen\filteranlagen\index.htm">Filteranlagen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/einzelanlagen/foerderanlagen/">Förderanlagen</a>-->
-                                        <a class="hyphenate" title="Förderanlagen" href="<?php echo $url; ?>\einzelanlagen\foerderanlagen\index.htm">Förderanlagen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/einzelanlagen/mms-controlube/">MMS ControLube</a>-->
-                                        <a class="hyphenate" title="MMS ControLube" href="<?php echo $url; ?>\einzelanlagen\mms-controlube\index.htm">MMS ControLube</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/einzelanlagen/zerkleinerungsanlagen/">Zerkleinerungsanlagen</a>-->
-                                        <a class="hyphenate" title="Zerkleinerungsanlagen" href="<?php echo $url; ?>\einzelanlagen\zerkleinerungsanlagen\index.htm">Zerkleinerungsanlagen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/einzelanlagen/#anwendungen">Anwendungen</a>-->
-                                        <a class="hyphenate" title="Anwendungen" href="/einzelanlagen/anwendungen/">Anwendungen</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <!--<a href="/zentralsysteme/" class="">Zentralsysteme</a>-->
-                                    <a class="hyphenate" title="Zentralsysteme" href="<?php echo $url; ?>\zentralsysteme\index.htm">Zentralsysteme</a></h4>
-                                <ul>
-                                    <li class="menu_sub">
-                                        <!--<a href="/zentralsysteme/systeme-mit-pumptechnik/">Systeme mit Pumptechnik</a>-->
-                                        <a class="hyphenate" title="Systeme mit Pumptechnik" href="<?php echo $url; ?>\zentralsysteme\systeme-mit-pumptechnik\index.htm">Systeme mit Pumptechnik</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/zentralsysteme/systeme-mit-saugtechnik/">Systeme mit Saugtechnik</a>-->
-                                        <a class="hyphenate" title="Systeme mit Saugtechnik" href="<?php echo $url; ?>\zentralsysteme\systeme-mit-saugtechnik\index.htm">Systeme mit Saugtechnik</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/zentralsysteme/systeme-mit-sammelfoerderer/">Systeme mit Sammelförderer</a>-->
-                                        <a class="hyphenate" title="Systeme mit Sammelförderer" href="<?php echo $url; ?>\zentralsysteme\systeme-mit-sammelfoerderer\index.htm">Systeme mit Sammelförderer</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/zentralsysteme/systeme-zur-spaeneaufbereitung/">Systeme zur Späneaufbereitung</a>-->
-                                        <a class="hyphenate" title="Systeme zur Späneaufbereitung" href="<?php echo $url; ?>\zentralsysteme\systeme-zur-spaeneaufbereitung\index.htm">Systeme zur Späneaufbereitung</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <!--<a href="/transportsysteme/" class="">Transportsysteme</a>-->
-                                    <a class="hyphenate" title="Transportsysteme" href="<?php echo $url; ?>\transportsysteme\index.htm">Transportsysteme</a></h4>
-                                <ul>
-                                    <li class="menu_sub">
-                                        <!--<a href="/transportsysteme/#montageanwendungen">Montageanwendungen</a>-->
-                                        <a class="hyphenate" title="Montageanwendungen" href="/transportsysteme/montageanwendungen/">Montageanwendungen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/transportsysteme/#logistikanwendungen">Logistikanwendungen</a>-->
-                                        <a class="hyphenate" title="Logistikanwendungen" href="/transportsysteme/logistikanwendungen/">Logistikanwendungen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/transportsysteme/#service">Dienstleistungen</a>-->
-                                        <a class="hyphenate" title="Dienstleistungen" href="/transportsysteme/dienstleistungen/">Dienstleistungen</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/transportsysteme/#branchen">Branchen</a>-->
-                                        <a class="hyphenate" title="Branchen" href="/transportsysteme/branchen/">Branchen</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <!--<a href="/pumpen/" class="">Pumpen</a>-->
-                                    <a class="hyphenate" title="Pumpen" href="<?php echo $url; ?>\pumpen\index.htm">Pumpen</a></h4>
-                                <ul>
-                                    <li class="menu_sub">
-                                        <!--<a href="/pumpen/schraubenspindelpumpe-kts/">Schraubenspindelpumpe KTS</a>-->
-                                        <a class="hyphenate" title="Schraubenspindelpumpe KTS" href="<?php echo $url; ?>\pumpen\schraubenspindelpumpe-kts\index.htm">Schraubenspindelpumpe KTS</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/pumpen/schraubenspindelpumpe-ktsv/">Schraubenspindelpumpe KTSV</a>-->
-                                        <a class="hyphenate" title="Schraubenspindelpumpe KTSV" href="<?php echo $url; ?>\pumpen\schraubenspindelpumpe-ktsv\index.htm">Schraubenspindelpumpe KTSV</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/pumpen/kreiselpumpe/">Kreiselpumpe</a>-->
-                                        <a class="hyphenate" title="Kreiselpumpe" href="<?php echo $url; ?>\pumpen\kreiselpumpe\index.htm">Kreiselpumpe</a></li>
-                                    <li class="menu_sub">
-                                        <!--<a href="/pumpen/exzenterschneckenpumpe-mx/">Exzenterschneckenpumpe MX</a>-->
-                                        <a class="hyphenate" title="Exzenterschneckenpumpe MX" href="<?php echo $url; ?>\pumpen\exzenterschneckenpumpe-mx\index.htm">Exzenterschneckenpumpe MX</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <a href="<?php echo $url; ?>\service\index.htm" class="hyphenate test">Service</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <a href="..\..\index.htm" class="hyphenate test">Aktuelles</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <a href="<?php echo $url; ?>\kontakt\index.htm" class="hyphenate test">Kontakt</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-2">
-                        <ul class="menu_content">
-                            <li>
-                                <h4 class="menu_head">
-                                    <a href="<?php echo $url; ?>\karriere\index.htm" class="hyphenate test">Karriere</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <?php get_footer();?>
-            </div>
-            <div class="foot_left_grad foot_grad"></div>
-            <div class="foot_right_grad foot_grad"></div>
-        </div>
-        <div class="footer_bottom_dv">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="social_dv">
-                            <div class="tx-dce-pi1">
-                                <div class="socialtest"></div>
-                                <a href="https://www.facebook.com/knollausbildung/" target="_blank">
-                                    <div class="icon">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                        <p class="icon_text">Facebook</p></div>
-                                </a>
-                                <a href="https://www.xing.com/companies/knollmaschinenbaugmbh" target="_blank">
-                                    <div class="icon">
-                                        <i class="fa fa-xing" aria-hidden="true"></i>
-                                        <p class="icon_text">Xing</p></div>
-                                </a>
-                                <a href="https://www.linkedin.com/company/knoll-maschinenbau-gmbh/" target="_blank">
-                                    <div class="icon">
-                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                        <p class="icon_text">LinkedIn</p></div>
-                                </a>
-                                <a href="https://www.instagram.com/knoll_maschinenbau/" target="_blank">
-                                    <div class="icon">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        <p class="icon_text">Instagram</p></div>
-                                </a>
-                                <a href="https://www.youtube.com/user/Knollitworks" target="_blank">
-                                    <div class="icon">
-                                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                                        <p class="icon_text">YouTube</p></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <nav class="footer_mid">
-                            <a title="Impressum" href="<?php echo $url; ?>\impressum\index.htm">Impressum</a>
-                            <a title="Datenschutz" href="<?php echo $url; ?>\datenschutz\index.htm">Datenschutz</a>
-                            <a title="Informationspflicht nach Art. 13" href="<?php echo $url; ?>\informationspflicht-nach-art-13\index.htm">Informationspflicht nach Art. 13</a>
-                            <a title="AGB" href="<?php echo $url; ?>\agb\index.htm">AGB</a>
-                            <a title="Downloads" href="<?php echo $url; ?>\downloads\index.htm">Downloads</a></nav>
-                    </div>
-                    <div class="col-md-3 text-right">
-                        <div class="copyright">
-                            <i class="fa fa-copyright" aria-hidden="true"></i>
-                            <p>HYDROFOS Maschinenbau GmbH
-                            <p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div id="cookies" style="opacity: 0">
-        <div class="wrapper">
-            <div class="content">
-                <p>Wir verwenden Cookies, um diese Webseite bestmöglich an Ihre Bedürfnisse anzupassen sowie unsere Serviceleistungen zu verbessern. Die weitere Nutzung der Webseite wird als Zustimmung zu unseren
-                    <a href="<?php echo $url; ?>\datenschutz\index.htm">Regelungen über Cookies</a>verstanden.</p></div>
-            <div class="buttons">
-                <a href="<?php echo $url; ?>\datenschutz\index.htm" class="btn_c">Mehr</a>
-                <a href="javascript: void(0)" class="btn_c">OK</a></div>
-        </div>
-    </div>
-    <script src="<?php echo $url; ?>\typo3temp\assets\compressed\merged-e52a66f261577b65c5b0a278b12130e1-8f2ff92135167a401e722786315b8043.js?1560586270" type="text/javascript"></script>
-    <script src="<?php echo $url; ?>\typo3temp\assets\compressed\merged-6b0b01f3db70003843ab03342a10e96e-e805599761e92044bfb05456870afe47.js?1558096143" type="text/javascript"></script>
+    
+     <?php get_footer();?>
     </body>
 
     </html>

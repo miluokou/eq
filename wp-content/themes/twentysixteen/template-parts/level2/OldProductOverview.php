@@ -2,6 +2,7 @@
 global $cat;
 $c = get_category($cat);
 $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hide_empty=0&hierarchical=1&optioncount=1&title_li=');
+
 ?>
 <section class="Headline_Copy_Image secdv background_grey remove_bottom_padding " id="">
     <div class="container">
@@ -31,7 +32,7 @@ $currentSubclasses = my_list_categories('child_of=' . $c->term_id . '&depth=1&hi
                                 <div class="image_div smlbx">
                                     <picture>
                                         <source media="(min-width: 1200px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>'>
-                                        <source media="(min-width: 992px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>>
+                                        <source media="(min-width: 992px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>'>
                                         <source media="(min-width: 768px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?> '>
                                         <source media="(min-width: 480px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>'>
                                         <source media="(max-width: 479px)" data-srcset='<?php echo getCatFirstPostImage($currentSub->term_id) ;?>'>
