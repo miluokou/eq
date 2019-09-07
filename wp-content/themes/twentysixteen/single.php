@@ -168,7 +168,7 @@ if(!empty($args['新闻轮播图3'][0])){
                                 </div>
                                 <!--gallery/slider variation3 ends--->
                                 <div class="content-dv rte_atag rte_img">
-                                    <h1 class="common_heading "><?php echo $post->post_title;?></h1>
+                                    <h1 class="common_heading " style= 'margin: 0 0 -20px 10px;'><?php echo $post->post_title;?></h1>
                                     <?php  echo $post->post_content;?>
                                 </div>
                             </div>

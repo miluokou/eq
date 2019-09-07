@@ -1,5 +1,5 @@
 <?php
-$nextLevelCates = getNextLevelChildInfo($level = 3);
+$nextLevelCates = getNextLevelChildInfo($level = 2);
 foreach ($nextLevelCates as $fatherCateId => $nextLevelCate) {
     $fatherCate = get_category($fatherCateId);
     ?>
